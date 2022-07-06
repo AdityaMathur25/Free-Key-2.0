@@ -171,55 +171,61 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-3 mb-1">
+          <div class="col-md-3 mb-3">
             <div class="card bg-primary text-white h-5">
               <div class="card-body py-5">Total Applications <?php echo "88" ?> 
               </div>
               
               <div class="card-footer d-flex">
-                More Details
+                Manage Applications
                 <span class="ms-auto">
                 <a
-            style="color: white;text-decoration: none;"
-            href="#">
+            style="color: white;text-decoration: none;"href="#">
+                  <i class="bi bi-chevron-right"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-3 mb-3">
+            <div class="card bg-warning text-dark h-100">
+              <div class="card-body py-5">Total Users</div>
+              <div class="card-footer d-flex">
+              Manage Users
+                <span class="ms-auto">
+                <a
+            style="color: white;text-decoration: none;"href="#">
                   <i class="bi bi-chevron-right"></i></a>
                 </span>
               </div>
             </div>
           </div>
           <div class="col-md-3 mb-3">
-            <div class="card bg-warning text-dark h-100">
-              <div class="card-body py-5">Warning Card</div>
-              <div class="card-footer d-flex">
-                View Details
-                <span class="ms-auto">
-                  <i class="bi bi-chevron-right"></i>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
             <div class="card bg-success text-white h-100">
-              <div class="card-body py-5">Success Card</div>
+              <div class="card-body py-5">Generate Keys</div>
               <div class="card-footer d-flex">
-                View Details
+              More Details
                 <span class="ms-auto">
-                  <i class="bi bi-chevron-right"></i>
+                <a
+            style="color: white;text-decoration: none;"href="#">
+                  <i class="bi bi-chevron-right"></i></a>
                 </span>
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-3">
+          <!-- <div class="col-md-3 mb-3">
             <div class="card bg-danger text-white h-100">
               <div class="card-body py-5">Danger Card</div>
               <div class="card-footer d-flex">
-                View Details
+              More Details
                 <span class="ms-auto">
-                  <i class="bi bi-chevron-right"></i>
+                <a
+            style="color: white;text-decoration: none;"href="#">
+                  <i class="bi bi-chevron-right"></i></a>
                 </span>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="row">
           <div class="col-md-6 mb-3">
