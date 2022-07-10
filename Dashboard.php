@@ -71,11 +71,12 @@ require('database/db.php');
                 <i class="bi bi-person-fill"></i>
               </a>
               <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                
+                <li><a class="dropdown-item" href="#">Profile Settings</a></li>
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#">Contact Support</a>
                 </li>
+                <li><a class="dropdown-item" style="border:3px red solid;" href="#">Log Out</a></li>
               </ul>
             </li>
           </ul>
@@ -416,6 +417,5 @@ while($data = mysqli_fetch_array($records))
     
 
   </body>
-
   
 </html>
