@@ -34,31 +34,6 @@ require('database/db.php');
         <a
           class="navbar-brand me-auto ms-lg-0 ms-3 text-uppercase fw-bold"
           href="#"> 🔑 FreeKey 2.0</a>
-        <!-- <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#topNavBar"
-          aria-controls="topNavBar"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="topNavBar">
-          <form class="d-flex ms-auto my-3 my-lg-0">
-            <div class="input-group">
-              <input
-                class="form-control"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-               <button class="btn btn-primary" type="submit">
-                <i class="bi bi-search"></i>
-              </button>
-            </div>
-          </form> -->
           <ul class="navbar-nav">
             <li class="nav-item dropdown">
               <a
@@ -100,33 +75,6 @@ require('database/db.php');
               </a>
             </li>
             <li class="my-1"><hr class="dropdown-divider bg-light" /></li>
-            <!-- <li>
-              <a
-                class="nav-link px-3 sidebar-link"
-                data-bs-toggle="collapse"
-                href="#layouts"
-              >
-                <span class="me-2"><i class="bi bi-layout-split"></i></span>
-                <span>Layouts</span>
-                <span class="ms-auto">
-                  <span class="right-icon">
-                    <i class="bi bi-chevron-down"></i>
-                  </span>
-                </span>
-              </a>
-              <div class="collapse" id="layouts">
-                <ul class="navbar-nav ps-3">
-                  <li>
-                    <a href="#" class="nav-link px-3">
-                      <span class="me-2"
-                        ><i class="bi bi-speedometer2"></i
-                      ></span>
-                      <span>Dashboard</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li> -->
             <li>
               <a href="#" class="nav-link px-3">
                 <span class="me-2"><i class="bi bi-layers"></i></span>
@@ -178,7 +126,21 @@ require('database/db.php');
         <div class="row">
           <div class="col-md-3 mb-3">
             <div class="card bg-primary text-white h-5">
-              <div class="card-body py-5">Total Applications <?php echo "88" ?> 
+              <?php
+              //$sql = "SELECT * FROM `dataa` where user = '".$_SESSION['username']."' ";
+              $sql = "SELECT COUNT(user) FROM dataa WHERE user = '".$_SESSION['username']."'";
+              $records = mysqli_query($con,$sql); // fetch data from database
+              while($data = mysqli_fetch_array($records))
+              {
+                foreach($data as $data){
+                 
+              }
+                ?>
+            <td>
+              <div class="card-body py-5">Total Applications : <?php  print_r($data); ?>
+              <?php  
+              }
+              ?>
               </div>
               
               <div class="card-footer d-flex">
@@ -191,10 +153,19 @@ require('database/db.php');
               </div>
             </div>
           </div>
-          
+          <?php
+              //$sql = "SELECT * FROM `dataa` where user = '".$_SESSION['username']."' ";
+              $sql1 = "SELECT SUM(ttl) FROM dataa WHERE user = '".$_SESSION['username']."'";
+              $records1 = mysqli_query($con,$sql1); // fetch data from database
+              $data1 = mysqli_fetch_array($records1);
+              foreach($data1 as $data1)
+              
+              ?>
           <div class="col-md-3 mb-3">
             <div class="card bg-warning text-dark h-100">
-              <div class="card-body py-5">Total Users</div>
+
+              <div class="card-body py-5">Total Keys Generated :  <?php echo $data1 ?>
+              </div>
               <div class="card-footer d-flex">
               Manage Users
                 <span class="ms-auto">
