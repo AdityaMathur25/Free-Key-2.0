@@ -6,15 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css">
+   
     <link rel="icon" href="images/logo.ico">
     <title>Login</title>
 </head>
 
 <body>
 <?php
+
 // include("auth_session.php");
     require('database/db.php');
     session_start();
+    $uip=$_SERVER['REMOTE_ADDR'];
     // When form submitted, check and create user session.
     if (isset($_POST['username'])) {
         $username = stripslashes($_REQUEST['username']);    // removes backslashes
@@ -27,13 +30,27 @@
         $result = mysqli_query($con, $query) or die(mysqli_connect_error());
         $rows = mysqli_num_rows($result);
         if ($rows == 1) {
-            $_SESSION['username'] = $username;
-            // Redirect to user dashboard page
+           
+            $_SESSION['username'] = $username; 
+            // $username=$_POST['username'];
+            $ret=mysqli_query($con,"SELECT * FROM `users` WHERE userName='$username'  and password='" . md5($password) . "'");
+            $num=mysqli_fetch_array($ret);
+            if($num>0)
+           $cat =  mysqli_query($con,"SELECT old_ip from users where username = '$username'");
+           $bat = mysqli_fetch_array($cat);
+           foreach($bat as $bat){
+            $mad = $bat;
+            
+           }
+{
+            $_SESSION['id']=$num['id'];
+            mysqli_query($con,"UPDATE users set old_ip='$uip',new_ip='$mad' where username = '$username' "); 
+  }  // Redirect to user dashboard page
             header("Location: dashboard.php");
         } else {
             echo "<div class='text-large'>
                   <h3>Incorrect Username/password.</h3><br/>
-                  <p class='link'>Click here to <a href='login.php'>Login</a> again.</p>
+                  <p class='link'>Click here to <a href='login.php'  >Login</a> again.</p>
                   </div>";
         }
     } else {

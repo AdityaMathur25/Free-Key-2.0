@@ -193,9 +193,15 @@ require('database/db.php');
             <div class="card bg-danger text-white h-100">
             <div class="card-body">
             <br>
-                 Last Login : 192.168.0.1<br>
+            <?php
+                 $ip = "SELECT old_ip FROM users WHERE username = '".$_SESSION['username']."'";
+                 $ipr = mysqli_query($con,$ip); // fetch data from database
+                 $ipd = mysqli_fetch_array($ipr);
+                 foreach($ipd as $ipd)
+                 ?>
+                 Last Login : <?php echo $ipd ?><br>
                  last location : india
-
+    
             </div>
               <div class="card-footer d-flex">
               More Details
@@ -208,30 +214,6 @@ require('database/db.php');
             </div>
           </div>
         </div>
-        <!-- <div class="row">
-          <div class="col-md-6 mb-3">
-            <div class="card h-100">
-              <div class="card-header">
-                <span class="me-2"><i class="bi bi-bar-chart-fill"></i></span>
-                Area Chart Example
-              </div>
-              <div class="card-body">
-                <canvas class="chart" width="400" height="200"></canvas>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <div class="card h-100">
-              <div class="card-header">
-                <span class="me-2"><i class="bi bi-bar-chart-fill"></i></span>
-                Area Chart Example
-              </div>
-              <div class="card-body">
-                <canvas class="chart" width="400" height="200"></canvas>
-              </div>
-            </div>
-          </div>
-        </div> -->
         <div class="row">
           <div class="col-md-12 mb-3">
             <div class="card">
@@ -303,7 +285,7 @@ while($data = mysqli_fetch_array($records))
 </div>
 <!-- End of .container -->
               </div>
-              <div class="container my-5">
+              <!-- <div class="container my-5"> -->
 
 <footer class="bg-light text-center text-white">
 <!-- Grid container -->
@@ -370,7 +352,7 @@ while($data = mysqli_fetch_array($records))
 <div class="text-center p-3" style="background-color: rgb(33, 37, 41);">
   © 2022 Copyright:
   <a class="text-white" href="#" style="text-decoration: none;">🔑 FREEKEY 2.0</a>
-</div>
+<!-- </div> -->
 <!-- Copyright -->
 </footer>
             </div>
