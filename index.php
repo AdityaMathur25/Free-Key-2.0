@@ -21,7 +21,7 @@
                     <a href="#home">home</a>
                     <a href="#feature">features</a>
                     <a href="#">pricing</a>
-                    <a href="terms.html" >terms</a>
+                    <a href="terms.html">terms</a>
                 </div>
                 <div class="sign-in">
                     <a href="login.php" class="login-btn">
@@ -120,7 +120,7 @@
             </div>
         </footer>
         <script type="text/javascript">
-            window.addEventListener("scroll", function () {
+            window.addEventListener("scroll", function() {
                 var header = document.querySelector("header");
                 header.classList.toggle("sticky", window.scrollY > 0);
             })
