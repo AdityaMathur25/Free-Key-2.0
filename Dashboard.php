@@ -36,7 +36,7 @@
               <li>
                 <a class="dropdown-item" href="#">Contact Support</a>
               </li>
-              <li><a class="dropdown-item" style="border:3px red solid;" href="#">Log Out</a></li>
+              <li><a class="dropdown-item" style="border:3px red solid;" href="logout.php">Log Out</a></li>
             </ul>
           </li>
         </ul>
@@ -59,7 +59,7 @@
               <hr class="dropdown-divider bg-light" />
             </li>
             <li>
-              <a href="#" class="nav-link px-3">
+              <a href="application.php" class="nav-link px-3">
                 <span class="me-2"><i class="bi bi-layers"></i></span>
                 <span>Application</span>
               </a>
