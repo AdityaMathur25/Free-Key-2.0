@@ -37,6 +37,13 @@ require('database/db.php');
                             <a class="dropdown-item" href="#">Contact Support</a>
                         </li>
                         <li><a class="dropdown-item" style="border:3px red solid;" href="logout.php">Log Out</a></li>
+                        <li class="dropdown-item">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="but1" checked />
+                                <label class="form-check-label" for="but1">Table</label>
+                            </div>
+                        </li>
+
                     </ul>
                 </li>
             </ul>
