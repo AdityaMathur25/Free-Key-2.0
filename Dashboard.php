@@ -59,7 +59,7 @@
               <hr class="dropdown-divider bg-light" />
             </li>
             <li>
-              <a href="application.php" class="nav-link px-3">
+              <a href="app2.php" class="nav-link px-3">
                 <span class="me-2"><i class="bi bi-layers"></i></span>
                 <span>Application</span>
               </a>
