@@ -45,8 +45,3 @@ $(document).ready(function () {
     $(table).DataTable();
   });
 });
-if (document.getElementById("but1").checked) {
-  console.log("hi guys");
-} else {
-  console.log("bye guys");
-}

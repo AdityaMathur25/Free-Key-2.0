@@ -38,16 +38,16 @@ require('database/db.php');
                         </li>
                         <li><a class="dropdown-item" style="border:3px red solid;" href="logout.php">Log Out</a></li>
                         <li class="dropdown-item">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="but1" checked />
-                                <label class="form-check-label" for="but1">Table</label>
-                            </div>
+                            <label for="border1">
+                                <input checked="true" type="checkbox" id="border1" />
+                               Tabullar Mode
+                            </label>
                         </li>
 
                     </ul>
                 </li>
             </ul>
-        </div>
+        </div>www
         </div>
     </nav>
     <!-- top navigation bar -->
@@ -148,7 +148,9 @@ require('database/db.php');
                                         <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                                         <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                                     </div>
-                                    <small class="text-muted">9 mins</small>
+                                    <div>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">edit</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -209,7 +211,7 @@ require('database/db.php');
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary ">View</button>
                                         <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                                     </div>
                                     <small class="text-muted">9 mins</small>
@@ -328,6 +330,7 @@ require('database/db.php');
     <script src="./js/jquery.dataTables.min.js"></script>
     <script src="./js/dataTables.bootstrap5.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="js/my.js"></script>
 
 
 </body>

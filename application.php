@@ -37,6 +37,12 @@ require('database/db.php');
                             <a class="dropdown-item" href="#">Contact Support</a>
                         </li>
                         <li><a class="dropdown-item" style="border:3px red solid;" href="logout.php">Log Out</a></li>
+                        <li class="dropdown-item">
+                            <label for="border2">
+                                <input checked="false" type="checkbox" id="border2"  />
+                                Default Mode
+                            </label>
+                        </li>
                     </ul>
                 </li>
             </ul>
@@ -246,6 +252,7 @@ require('database/db.php');
     <script src="./js/jquery.dataTables.min.js"></script>
     <script src="./js/dataTables.bootstrap5.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/my.js"></script>
 
 
 </body>
