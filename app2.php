@@ -40,7 +40,7 @@ require('database/db.php');
                         <li class="dropdown-item">
                             <label for="border1">
                                 <input checked="true" type="checkbox" id="border1" />
-                               Tabullar Mode
+                                Tabullar Mode
                             </label>
                         </li>
 

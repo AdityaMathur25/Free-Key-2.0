@@ -109,10 +109,10 @@ require('database/db.php');
     <!-- offcanvas -->
     <main class="mt-5 pt-3">
         <div class="container-fluid">
-            <div class="row p-2">
-                <div class="col-6">
+        <div class="row p-2">
+                <div class="col-8">
                     <div class="card bg-success text-white h-100">
-                        <div class="card-body py-5">Generate Keys</div>
+                        <div class="card-body py-5 fs-1 fw-bold fst-italic font-monospace font-italic">Generate Keys</div>
                         <div class="card-footer d-flex">
                             More Details
                             <span class="ms-auto">
@@ -122,9 +122,9 @@ require('database/db.php');
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-4">
                     <div class="card bg-danger text-white h-100">
-                        <div class="card-body py-5">Generate Keys</div>
+                        <div class="card-body py-5 fs-1 fst-italic  fw-bold font-monospace ">Generate Keys</div>
                         <div class="card-footer d-flex">
                             More Details
                             <span class="ms-auto">
