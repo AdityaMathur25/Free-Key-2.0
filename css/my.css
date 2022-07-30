@@ -1,16 +1,37 @@
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    /* width: 100%; */
-    background-color: rgb(222, 222, 222);
-    color: white;
-    text-align: center;
-    
- }
- .leftt{
-    padding-top: 0.5em;
-    padding-bottom:0.5em;
-    padding-left: 0.5em;
- }
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* width: 100%; */
+  background-color: rgb(222, 222, 222);
+  color: white;
+  text-align: center;
+}
+.leftt {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+}
+.borderop {
+  border: 20px red solid;
+}
+
+@media (max-width: 575.98px) {
+  .cif {
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 1399.98px) {
+}
+
+/* @include media-breakpoint-down(sm) {
+}
+@media (min-width: 768px) and (max-width: 1199.98px) {
+} */
