@@ -102,8 +102,8 @@
             </nav>
         </div>
     </div>
-    
-            <!-- <div class="row p-2">
+
+    <!-- <div class="row p-2">
                 <div class="col-8">
                     <a href="application.php" style="text-decoration: none; color: white;">
                         <div class="card bg-primary text-white h-100">
@@ -120,20 +120,20 @@
 
 
             </div> -->
-           <main class="mt-5 pt-3 px-2">
-           <button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-light">Light</button>
-<button type="button" class="btn btn-dark">Dark</button>
+    <main class="mt-5 pt-3 px-2">
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
 
-<button type="button" class="btn btn-link">Link</button>
-           </main>
+        <button type="button" class="btn btn-link">Link</button>
+    </main>
 
-            <!-- <div class="d-flex justify-content-center">
+    <!-- <div class="d-flex justify-content-center">
                 
                 <a class="btn btn-primary" style="background-color: #55acee;" href="#!" role="button"><i class="bi bi-twitter me-2"></i>Twitter</a>
                 <a class="btn btn-primary" style="background-color: #5661F5;" href="#!" role="button"><i class="bi bi-twitter me-2"></i>Discord</a>
@@ -144,7 +144,7 @@
             <div class="d-flex justify-content-center">
                 
             </div> -->
-        </div>
+    </div>
     </main>
 
     </div>
