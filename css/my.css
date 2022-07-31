@@ -16,17 +16,24 @@
 .borderop {
   border: 20px red solid;
 }
+.cop{
+    margin-bottom: 180px;
+}
 
 @media (max-width: 575.98px) {
   .cif {
     padding-left: 20px;
     padding-bottom: 20px;
   }
-
 }
 
-@media (max-width: 1199.98px) {
-}
+/* @media (max-width: 638px) {
+  .csw {
+    z-index: 1000;
+    position: absolute;
+    border: 2px red solid;
+  }
+} */
 
 @media (max-width: 1399.98px) {
 }
@@ -34,4 +41,17 @@
 /* @include media-breakpoint-down(sm) {
 }
 @media (min-width: 768px) and (max-width: 1199.98px) {
+} */
+/* .csw {
+  z-index: 1000;
+  position: absolute;
+  border: 2px red solid;
+} */
+/* @media only screen and (max-width: 600px) {
+    .noisy{
+        z-index: 5000;
+        position: sticky;
+        border: 2px red solid;
+        display: none; 
+      }
 } */

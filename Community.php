@@ -1,3 +1,7 @@
+<?php
+include("database/auth_session.php");
+require('database/db.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,27 +25,30 @@
                 <span class="navbar-toggler-icon" data-bs-target="#sidebar"></span>
             </button>
             <a class="navbar-brand me-auto ms-lg-0 ms-3 text-uppercase fw-bold" href="#"> 🔑 FreeKey 2.0</a>
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown dropdown">
-                    <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown">
-                        <i class="bi bi-person-fill"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end">
+            <div class="noisy">
+                <ul class="navbar-nav">
+                    <li class=" nav-item dropdown dropdown">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-person-fill"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
 
-                        <li><a class="dropdown-item" href="#">Profile Settings</a></li>
-                        <li>
-                            <a class="dropdown-item" href="#">Contact Support</a>
-                        </li>
-                        <li><a class="dropdown-item" style="border:3px red solid;" href="logout.php">Log Out</a></li>
-                        <li class="dropdown-item">
-                            <label for="border2">
-                                <input checked="false" type="checkbox" id="border2" />
-                                Default Mode
-                            </label>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+                            <li><a class="dropdown-item" href="#">Profile Settings</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Contact Support</a>
+                            </li>
+                            <li><a class="dropdown-item" style="border:3px red solid;" href="logout.php">Log Out</a></li>
+                            <li class="dropdown-item">
+                                <label for="border2">
+                                    <input checked="false" type="checkbox" id="border2" />
+                                    Default Mode
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
 
         </div>
     </nav>
@@ -61,7 +68,7 @@
                         <hr class="dropdown-divider bg-light" />
                     </li>
                     <li>
-                        <a href="#" class="nav-link px-3 active">
+                        <a href="application.php" class="nav-link px-3 ">
                             <span class="me-2"><i class="bi bi-layers"></i></span>
                             <span>Application</span>
                         </a>
@@ -73,7 +80,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="Community.php" class="nav-link px-3">
+                        <a href="Community.php" class="nav-link px-3 active">
                             <span class="me-2"><i class="bi bi-people"></i></span>
                             <span>Community</span>
                         </a>
@@ -121,16 +128,106 @@
 
             </div> -->
     <main class="mt-5 pt-3 px-2">
-        <button type="button" class="btn btn-primary">Primary</button>
-        <button type="button" class="btn btn-secondary">Secondary</button>
-        <button type="button" class="btn btn-success">Success</button>
-        <button type="button" class="btn btn-danger">Danger</button>
-        <button type="button" class="btn btn-warning">Warning</button>
-        <button type="button" class="btn btn-info">Info</button>
-        <button type="button" class="btn btn-light">Light</button>
-        <button type="button" class="btn btn-dark">Dark</button>
+        <div>
+            <div class="text-center">
+                <button type="button" class="btn btn-primary" style="width: 100%; height: 60px; background-color:#5561F5;"><i class="bi bi-discord "></i> Discord</button>
+            </div>
+            <div class="row pt-2">
+                <div class="col-6">
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary" style="width: 100%; height: 60px;"><i class="bi bi-facebook "></i> Facebook</button>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary" style="width: 100%; height: 60px; background-color:#2FC751;"><i class="bi bi-whatsapp "></i> Whatsapp</button>
+                    </div>
+                </div>
+                <div class="col-12 pt-2">
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary" style="width: 100%; height: 60px; background-color:#E85E42;"><i class="bi bi-instagram "></i> Instagram</button>
+                    </div>
+                </div>
+            </div>
 
-        <button type="button" class="btn btn-link">Link</button>
+        </div>
+
+        <div class="form-row d-flex align-items-center justify-content-center mt-2">
+            <div class="col-md-2 text-center col-md-push-6 font-weight-bold text-uppercase font-size-big  ">
+                Refferal code
+            </div>
+            <div class="col-md-5 col-md-pull-3 my-1 strech"><input type="text" readonly="" class="form-control form-control-wide"></div>
+            <div class="col-md-5 col-md-pull-3 my-1 p-2"><button type="submit" class="btn btn-primary">Copy</button></div>
+        </div>
+        <div class="cop row mb-6">
+            <div class="col-md-12 mb-3">
+                <div class="card">
+                    <div class="card-header text-center">
+                        📊 Top Application Information
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table id="example" class="table table-striped data-table" style="width: 100%">
+                                <thead>
+                                    <tr>
+                                        <th>APP NAME</th>
+                                        <th>VERSION</th>
+                                        <th>Total User</th>
+                                        <th>Current User</th>
+                                        <th>Key Details</th>
+                                        <th>HWID</th>
+                                        <th>Edit</th>
+                                        <th>Delete</th>
+                                    </tr>
+
+                                </thead>
+                                <tbody>
+                                    <?php
+
+                                    // include("auth_session.php");
+                                    // require('db.php');// Using database connection file here
+                                    $sql = "SELECT * FROM `dataa` where user = '" . $_SESSION['username'] . "' limit 5";
+                                    $records = mysqli_query($con, $sql); // fetch data from database
+                                    while ($data = mysqli_fetch_array($records)) {
+                                    ?>
+
+                                        <tr class="active-row" align="left">
+                                            <td><?php echo $data['app']; ?></td>
+                                            <td><?php echo $data['veri']; ?></td>
+                                            <td><?php $man = $data['app'];
+                                                $cnt = mysqli_query($con, "SELECT id FROM $man  ORDER BY id DESC  LIMIT 1;");
+                                                while ($doh = mysqli_fetch_array($cnt)) echo $doh['id']; ?></td>
+                                            <td><?php $man = $data['app'];
+                                                $cnt = mysqli_num_rows(mysqli_query($con, "SELECT * FROM $man;"));
+                                                echo $cnt ?></td>
+                                            <td><a href="current.php?app=<?php echo $data['app']; ?>">View</a></td>
+                                            <td><?php echo $data['hwid']; ?></td>
+                                            <td><a href="edit.php?id=<?php echo $data['id']; ?>&pname=<?php echo $data['app']; ?>&veri=<?php echo $data['veri']; ?>&updatep=<?php echo $data['links']; ?>">Edit</a></td>
+                                            <td><a href="delete.php?id=<?php echo $data['id']; ?>&app=<?php echo $data['app']; ?>">Delete</a></td>
+                                        </tr>
+
+                                    <?php
+
+                                    }
+                                    ?>
+                                </tbody>
+                                <!-- <tfoot>
+                        <tr>
+                          <th>Name</th>
+                          <th>Position</th>
+                          <th>Office</th>
+                          <th>Age</th>
+                          <th>Start date</th>
+                          <th>Salary</th>
+                        </tr>
+                      </tfoot> -->
+                            </table>
+                        </div>
+                        <!-- Remove the container if you want to extend the Footer to full width. -->
+
+                    </div>
+                    <!-- End of .container -->
+                </div>
     </main>
 
     <!-- <div class="d-flex justify-content-center">
