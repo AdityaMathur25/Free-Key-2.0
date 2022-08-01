@@ -5,9 +5,9 @@ button {
   font-family: "Inter", sans-serif;
 }
 
-* {
-  /* cursor:url(https://cdn.custom-cursor.com/db/pointer/32/Ben_10_Pointer.png) , pointer!important; */
-}
+ /* {
+   cursor:url(https://cdn.custom-cursor.com/db/pointer/32/Ben_10_Pointer.png) , pointer!important; 
+}  */
 
 :root {
   --offcanvas-width: 270px;
@@ -52,4 +52,7 @@ button {
     height: calc(100% - var(--topNavbarHeight));
     top: var(--topNavbarHeight);
   }
+}
+@media screen {
+  
 }
