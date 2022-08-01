@@ -104,7 +104,7 @@
     <main class="mt-5 pt-3">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12 text-center text-uppercase">
             <h4>Dashboard</h4>
           </div>
         </div>

@@ -71,7 +71,7 @@ require('database/db.php');
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link px-3">
+                        <a href="profile.php" class="nav-link px-3">
                             <span class="me-2"><i class="bi bi-person-circle"></i></span>
                             <span>Profile</span>
                         </a>
@@ -110,7 +110,7 @@ require('database/db.php');
     <main class="mt-5 pt-3">
         <div class="container-fluid">
             <div class="row p-2">
-                <div class="col-8">
+                <div class="col-xs-12 col-sm-6 col-md-8 order-2 order-sm-1 ">
                     <a href="application.php" style="text-decoration: none; color: white;">
                         <div class="card bg-primary text-white h-100">
                             <div class="card-body py-5 fs-1 fw-bold fst-italic font-monospace font-italic">Create Application</div>
@@ -126,7 +126,8 @@ require('database/db.php');
 
 
             </div>
-            <div class="col-4">
+            <br>
+            <div class="col-xs-12 col-sm-6 col-md-4 order-2 order-sm-2">
                 <a href="application.php" style="text-decoration: none; color: white;">
                     <div class="card bg-danger text-white h-100">
                         <div class="card-body py-5 fs-1 fst-italic  fw-bold font-monospace ">Generate Keys</div>

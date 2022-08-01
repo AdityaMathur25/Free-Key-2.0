@@ -17,7 +17,7 @@
   border: 20px red solid;
 }
 .cop{
-    margin-bottom: 180px;
+    margin-bottom: 80px;
 }
 
 @media (max-width: 575.98px) {
@@ -55,3 +55,14 @@
         display: none; 
       }
 } */
+.diss1{
+
+  pointer-events: none;
+  opacity: 0.4;
+}
+.doubleunderline{
+
+    text-decoration:underline;
+    border-bottom: 1px solid #000;
+
+}
