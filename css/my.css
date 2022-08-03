@@ -74,3 +74,13 @@
   margin-top: 2px;
   font-size: smaller;
 }
+
+.foot {
+  position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:60px;
+    background:#ccc;
+
+}

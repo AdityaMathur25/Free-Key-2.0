@@ -27,7 +27,7 @@ SET name='$name',
  email='$email'
  WHERE username='$user'";
  if (mysqli_query($con, $query)) {
-    echo "successfully" ;
+    header('Location: success.php?message=Successfully+updated+your+profile');
 } else {
  echo "failed" ;
 }
