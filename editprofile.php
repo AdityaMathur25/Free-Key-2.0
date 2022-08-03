@@ -112,48 +112,63 @@ require('database/db.php');
         </div>
     </div>
     <main class="cop mt-2 pt-3 px-2">
+        <?php 
+        $sql = "SELECT * FROM `users` where username = '" . $_SESSION['username'] . "' ";
+        $records = mysqli_query($con, $sql); // fetch data from database
+        while ($data = mysqli_fetch_array($records)) {
+        ?> 
 
-        <div class="form-body">
+        
+
+
+        <div class="form-body " >
             <div class="row">
                 <div class="form-holder">
                     <div class="form-content">
                         <div class="form-items">
-                            <h3>Register Today</h3>
-                            <p>Fill in the data below.</p>
-                            <form class="requires-validation" novalidate>
+                            <h3>UPDATE DETAILS</h3>
+                            <p>Fill in the data below to update <u>your profile</u> .</p>
+                            <form class="requires-validation" method="get"  action="/osx/proc.php" novalidate>
 
                                 <div class="col-md-12">
-                                    <input class="form-control" type="text" name="name" placeholder="Full Name" required>
-                                    <div class="valid-feedback">Username field is valid!</div>
-                                    <div class="invalid-feedback">Username field cannot be blank!</div>
+                                    <input class="form-control" type="text" name="name" placeholder="<?php echo $data['name'] ?>" required>
+                                    
                                 </div>
 
                                 <div class="col-md-12">
                                     <input class="form-control" type="email" name="email" placeholder="E-mail Address" required>
-                                    <div class="valid-feedback">Email field is valid!</div>
-                                    <div class="invalid-feedback">Email field cannot be blank!</div>
+                                    
+                                </div>
+                                <div class="numberr col-md-12">
+                                    <input class="form-control" type="text" name="number" placeholder="Phone Number" required >
+                                    <!-- <p class="numberr">enter number like <b>+91-*********</b></p> -->
+                                </div>
+                                <div class="col-md-12">
+                                    <input class="form-control" type="text" name="address" placeholder="Address" required>
+                                    
+                                </div>
+                                <div class="col-md-12">
+
+                                    <input class="form-control" type="text" name="Social" placeholder="Social Media Link" required>
+
+                                    
                                 </div>
 
-                                <div class="col-md-12">
+                                <!-- <div class="col-md-12">
                                     <select class="form-select mt-3" required>
                                         <option selected disabled value="">Position</option>
                                         <option value="jweb">Junior Web Developer</option>
                                         <option value="sweb">Senior Web Developer</option>
                                         <option value="pmanager">Project Manager</option>
                                     </select>
-                                    <div class="valid-feedback">You selected a position!</div>
-                                    <div class="invalid-feedback">Please select a position!</div>
-                                </div>
+                                    
+                                </div> -->
+<?php }?>
+
+                                
 
 
-                                <div class="col-md-12">
-                                    <input class="form-control" type="password" name="password" placeholder="Password" required>
-                                    <div class="valid-feedback">Password field is valid!</div>
-                                    <div class="invalid-feedback">Password field cannot be blank!</div>
-                                </div>
-
-
-                                <div class="col-md-12 mt-3">
+                                <!-- <div class="col-md-12 mt-3">
                                     <label class="mb-3 mr-1" for="gender">Gender: </label>
 
                                     <input type="radio" class="btn-check" name="gender" id="male" autocomplete="off" required>
@@ -166,17 +181,17 @@ require('database/db.php');
                                     <label class="btn btn-sm btn-outline-secondary" for="secret">Secret</label>
                                     <div class="valid-feedback mv-up">You selected a gender!</div>
                                     <div class="invalid-feedback mv-up">Please select a gender!</div>
-                                </div>
+                                </div> -->
 
-                                <div class="form-check">
+                                <!-- <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                                     <label class="form-check-label">I confirm that all data are correct</label>
                                     <div class="invalid-feedback">Please confirm that the entered data are all correct!</div>
-                                </div>
+                                </div> -->
 
 
                                 <div class="form-button mt-3">
-                                    <button id="submit" type="submit" class="btn btn-primary">Register</button>
+                                    <button id="submit" type="submit" class="btn btn-primary stretch" style="width: 100%;">Register</button>
                                 </div>
                             </form>
                         </div>
