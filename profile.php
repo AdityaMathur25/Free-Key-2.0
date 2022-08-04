@@ -112,7 +112,11 @@ $user = $_SESSION['username'];
   </div>
   <main class="cop mt-5 pt-3 px-2">
     <section style="background-color: #eee;">
-
+      <?php
+      $sql = "SELECT * FROM users WHERE username='$user'";
+      $records = mysqli_query($con, $sql);
+      $data = mysqli_fetch_array($records)
+      ?>
 
       <div class="row">
         <div class="col-lg-4">
@@ -121,13 +125,9 @@ $user = $_SESSION['username'];
               <img src="images/ava3.webp" alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">
               <h5 class="my-3"><?php echo $_SESSION['username']; ?></h5>
               <p class="text-muted mb-1">Full Stack Developer</p>
-              <p class="text-muted mb-4">Bay Area, San Francisco, CA</p>
+              <p class="text-muted mb-4"><?php echo $data['address'] ?></p>
               <div class="d-flex justify-content-center mb-2">
-                <?php
-                $sql = "SELECT * FROM users WHERE username='$user'";
-                $records = mysqli_query($con, $sql);
-                $data = mysqli_fetch_array($records)
-                ?>
+
 
                 <button type="button" class="btn btn-outline-primary ms-1 stretch" onclick="location.href = '<?php echo $data['social']; ?>';">Social</button>
               </div>
@@ -181,13 +181,14 @@ $user = $_SESSION['username'];
                 <div class="col-sm-9">
                   <p class="text-muted mb-0"><?php echo $data['address']; ?></p>
                 </div>
-               
+
               </div>
             </div>
-          </div> <div class="cop card mb-4 mb-lg-0">
-                  <button  type="button" onclick="location.href = 'editprofile.php';" class="btn btn-outline-primary " style="height: 60px;">EDIT PROFILE</button>
+          </div>
+          <div class="cop card mb-4 mb-lg-0">
+            <button type="button" onclick="location.href = 'editprofile.php';" class="btn btn-outline-primary " style="height: 60px;">EDIT PROFILE</button>
 
-                </div>
+          </div>
           <!-- <div class="row">
           <div class="col-md-6">
             <div class="card mb-4 mb-md-0">
