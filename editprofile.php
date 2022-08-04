@@ -159,7 +159,7 @@ $user = $_SESSION['username'];
                                     <!-- <input type="checkbox" name="color[]" id="color" value="Red"> -->
                                     <input type="hidden" name="public" value="FALSE" >
                                     <input type="checkbox" name="public" value="TRUE" >
-                                    <label class="form-check-label">I confirm to share my set my profile as <b>PUBLIC</b></label>
+                                    <label class="form-check-label">I confirm to set my profile as <b>PUBLIC</b></label>
                                     
                                 </div>
 
