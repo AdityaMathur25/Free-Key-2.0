@@ -1,6 +1,7 @@
 <?php
 include("database/auth_session.php");
 require('database/db.php');
+$user = $_SESSION['username'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -122,8 +123,13 @@ require('database/db.php');
               <p class="text-muted mb-1">Full Stack Developer</p>
               <p class="text-muted mb-4">Bay Area, San Francisco, CA</p>
               <div class="d-flex justify-content-center mb-2">
+                <?php
+                $sql = "SELECT * FROM users WHERE username='$user'";
+                $records = mysqli_query($con, $sql);
+                $data = mysqli_fetch_array($records)
+                ?>
 
-                <button type="button" class="btn btn-outline-primary ms-1 stretch">Social</button>
+                <button type="button" class="btn btn-outline-primary ms-1 stretch" onclick="location.href = '<?php echo $data['social']; ?>';">Social</button>
               </div>
             </div>
           </div>
