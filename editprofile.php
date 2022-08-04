@@ -191,7 +191,7 @@ require('database/db.php');
 
 
                                 <div class="form-button mt-3">
-                                    <button id="submit" type="submit" class="btn btn-primary stretch" style="width: 100%;">Register</button>
+                                    <button id="submit" type="submit" class="btn btn-primary stretch" style="width: 100%;">Update Profile</button>
                                 </div>
                             </form>
                         </div>

@@ -129,11 +129,13 @@ $message = $_GET['message'];
 
             </div> -->
     <main class="mt-5 pt-3 px-2">
-    <div class="alert alert-success" role="alert">
+    <div class="alert alert-success" role="alert" style="text-align: center ;">
   <h4 class="alert-heading">Well done!</h4>
   <p><?php echo $message; ?></p>
   <hr>
-  <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+  <!-- <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p> -->
+  <p align="center"><button type="button"  class="button4 btn btn-primary" onclick="location.href = '/Free-Key-2.0/dashboard.php';">Go Back</button></p>
+  
 </div>
     </main>
 
