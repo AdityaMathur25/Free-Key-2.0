@@ -113,47 +113,56 @@ $user = $_SESSION['username'];
         </div>
     </div>
     <main class="cop mt-2 pt-3 px-2">
-        <?php 
+        <?php
         $sql = "SELECT * FROM `users` where username = '" . $_SESSION['username'] . "' ";
         $records = mysqli_query($con, $sql); // fetch data from database
         $data = mysqli_fetch_array($records)
-        ?> 
-
-        
+        ?>
 
 
-        <div class="form-body " >
+
+
+        <div class="form-body ">
             <div class="row">
                 <div class="form-holder">
                     <div class="form-content">
                         <div class="form-items">
                             <h3>UPDATE DETAILS</h3>
                             <p>Fill in the data below to update <u>your profile</u> .</p>
-                            <form class="requires-validation" method="get"  action="extra/profile.php" novalidate>
+                            <form class="requires-validation" method="get" action="extra/profile.php" novalidate>
 
                                 <div class="col-md-12">
                                     <input class="form-control" type="text" name="name" value="<?php echo $data['name'] ?>" required>
-                                    
+
                                 </div>
 
                                 <div class="col-md-12">
                                     <input class="form-control" type="email" name="email" value="<?php echo $data['email'] ?>" required>
-                                    
+
                                 </div>
                                 <div class="numberr col-md-12">
-                                    <input class="form-control" type="text" name="number" value="<?php echo $data['mobile'] ?>" required >
+                                    <input class="form-control" type="text" name="number" value="<?php echo $data['mobile'] ?>" required>
                                     <!-- <p class="numberr">enter number like <b>+91-*********</b></p> -->
                                 </div>
                                 <div class="col-md-12">
                                     <input class="form-control" type="text" name="address" value="<?php echo $data['address'] ?>" required>
-                                    
+
                                 </div>
                                 <div class="col-md-12">
 
                                     <input class="form-control" type="text" name="Social" value="<?php echo $data['social'] ?>" required>
 
+
+                                </div>
+
+                                <div class="col-md-12 ptop">
+                                    <!-- <input type="checkbox" name="color[]" id="color" value="Red"> -->
+                                    <input type="hidden" name="public" value="FALSE" >
+                                    <input type="checkbox" name="public" value="TRUE" >
+                                    <label class="form-check-label">I confirm to share my set my profile as <b>PUBLIC</b></label>
                                     
                                 </div>
+
 
                                 <!-- <div class="col-md-12">
                                     <select class="form-select mt-3" required>
@@ -166,7 +175,7 @@ $user = $_SESSION['username'];
                                 </div> -->
 
 
-                                
+
 
 
                                 <!-- <div class="col-md-12 mt-3">
