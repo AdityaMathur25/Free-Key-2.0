@@ -1,6 +1,7 @@
 <?php
 include("../database/auth_session.php");
 require('../database/db.php');
+error_reporting(E_ERROR | E_PARSE);
 
 $public =   $_GET['profile'];
 
