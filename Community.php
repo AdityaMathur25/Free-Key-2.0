@@ -169,7 +169,7 @@ require('database/db.php');
                         📊 Top Application Information
                     </div>
                     <h1 align="center">UNDER DEVELOPEMENT</h1>
-                    <div class=" card-body">
+                    <div class="diss1 card-body">
                         <div class="table-responsive">
                             <table id="example" class="table table-striped data-table" style="width: 100%">
                                 <thead align="center">
@@ -194,7 +194,7 @@ require('database/db.php');
                                         <tr class="active-row" align="center">
                                             <td><?php echo $data['app']; ?></td>
                                             <td><a href="extra/public.php?profile=<?php echo $data['user']; ?>"><?php echo $data['user']; ?></a></td>
-                                            
+
 
                                         </tr>
 

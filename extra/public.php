@@ -64,60 +64,60 @@ $public =   $_GET['profile'];
   <!-- top navigation bar -->
   <!-- offcanvas -->
   <div class="offcanvas offcanvas-start sidebar-nav bg-dark" tabindex="-1" id="sidebar">
-    <div class="offcanvas-body p-0">
-      <nav class="navbar-dark">
-        <ul class="navbar-nav">
-          <li>
-            <a href="Dashboard.php" class="nav-link px-3 ">
-              <span class="me-2"><i class="bi bi-columns-gap"></i></span>
-              <span>Dashboard</span>
-            </a>
-          </li>
-          <li class="my-1">
-            <hr class="dropdown-divider bg-light" />
-          </li>
-          <li>
-            <a href="application.php" class="nav-link px-3 ">
-              <span class="me-2"><i class="bi bi-layers"></i></span>
-              <span>Application</span>
-            </a>
-          </li>
-          <li>
-            <a href="profile.php" class="nav-link px-3 active">
-              <span class="me-2"><i class="bi bi-person-circle"></i></span>
-              <span>Profile</span>
-            </a>
-          </li>
-          <li>
-            <a href="Community.php" class="nav-link px-3 ">
-              <span class="me-2"><i class="bi bi-people"></i></span>
-              <span>Community</span>
-            </a>
-          </li>
-          <li class="my-1">
-            <hr class="dropdown-divider bg-light" />
-          </li>
-          <li>
-            <div class="text-muted small fw-bold text-uppercase px-3 mb-3">
-              Resources
-            </div>
-          </li>
-          <li>
-            <a href="#" class="nav-link px-3">
-              <span class="me-2"><i class="bi bi-box-arrow-down"></i></span>
-              <span>Downloads</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link px-3">
-              <span class="me-2"><i class="bi bi-code-square"></i></span>
-              <span>Documentation</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+        <div class="offcanvas-body p-0">
+            <nav class="navbar-dark">
+                <ul class="navbar-nav">
+                    <li>
+                        <a href="/Free-Key-2.0/Dashboard.php" class="nav-link px-3 ">
+                            <span class="me-2"><i class="bi bi-columns-gap"></i></span>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="my-1">
+                        <hr class="dropdown-divider bg-light" />
+                    </li>
+                    <li>
+                        <a href="/Free-Key-2.0/application.php" class="nav-link px-3 ">
+                            <span class="me-2"><i class="bi bi-layers"></i></span>
+                            <span>Application</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/Free-Key-2.0/profile.php" class="nav-link px-3">
+                            <span class="me-2"><i class="bi bi-person-circle"></i></span>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/Free-Key-2.0/Community.php" class="nav-link px-3 active">
+                            <span class="me-2"><i class="bi bi-people"></i></span>
+                            <span>Community</span>
+                        </a>
+                    </li>
+                    <li class="my-1">
+                        <hr class="dropdown-divider bg-light" />
+                    </li>
+                    <li>
+                        <div class="text-muted small fw-bold text-uppercase px-3 mb-3">
+                            Resources
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3">
+                            <span class="me-2"><i class="bi bi-box-arrow-down"></i></span>
+                            <span>Downloads</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3">
+                            <span class="me-2"><i class="bi bi-code-square"></i></span>
+                            <span>Documentation</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
-  </div>
   <main class="cop mt-5 pt-3 px-2">
     <section style="background-color: #eee;">
       <?php

@@ -62,7 +62,7 @@ $tom = $_GET['tom'];
             <nav class="navbar-dark">
                 <ul class="navbar-nav">
                     <li>
-                        <a href="Dashboard.php" class="nav-link px-3 ">
+                        <a href="/Free-Key-2.0/Dashboard.php" class="nav-link px-3 ">
                             <span class="me-2"><i class="bi bi-columns-gap"></i></span>
                             <span>Dashboard</span>
                         </a>
@@ -131,14 +131,14 @@ $tom = $_GET['tom'];
 
             </div> -->
     <main class="mt-5 pt-3 px-2">
-    <div class="alert alert-<?php echo $typee;?>" role="alert" style="text-align: center ;">
-  <h4 class="alert-heading"><?php echo $tom; ?></h4>
-  <p><?php echo $message; ?></p>
-  <hr>
-  <!-- <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p> -->
-  <p align="center"><button type="button"  class="button4 btn btn-primary" onclick="location.href = '/Free-Key-2.0/dashboard.php';">Go Back</button></p>
-  
-</div>
+        <div class="alert alert-<?php echo $typee; ?>" role="alert" style="text-align: center ;">
+            <h4 class="alert-heading"><?php echo $tom; ?></h4>
+            <p><?php echo $message; ?></p>
+            <hr>
+            <!-- <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p> -->
+            <p align="center"><button type="button" class="button4 btn btn-primary" onclick="location.href = '/Free-Key-2.0/dashboard.php';">Go Back</button></p>
+
+        </div>
     </main>
 
     <!-- <div class="d-flex justify-content-center">
