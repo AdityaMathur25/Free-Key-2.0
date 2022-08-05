@@ -2,6 +2,8 @@
 // include("database/auth_session.php");
 // require('database/db.php');
 $message = $_GET['message'];
+$typee = $_GET['type'];
+$tom = $_GET['tom'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -129,8 +131,8 @@ $message = $_GET['message'];
 
             </div> -->
     <main class="mt-5 pt-3 px-2">
-    <div class="alert alert-success" role="alert" style="text-align: center ;">
-  <h4 class="alert-heading">Well done!</h4>
+    <div class="alert alert-<?php echo $typee;?>" role="alert" style="text-align: center ;">
+  <h4 class="alert-heading"><?php echo $tom; ?></h4>
   <p><?php echo $message; ?></p>
   <hr>
   <!-- <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p> -->

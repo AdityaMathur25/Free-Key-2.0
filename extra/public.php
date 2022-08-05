@@ -12,7 +12,7 @@ $public =   $_GET['profile'];
                     echo "your profile is visible to everyone";
                 }
                 else {
-                    echo "your profile is not visible to everyone";
+                    header('Location: success.php?message=User+has+choosed+not+to+display+the+profile+to+public&type=danger&tom=Sorry!!!');
                 }
 
 ?>

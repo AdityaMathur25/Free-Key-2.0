@@ -51,7 +51,7 @@ SET name='$name',
  public = '$public'
  WHERE username='$user'";
  if (mysqli_query($con, $query)) {
-     header('Location: success.php?message=Successfully+updated+your+profile');
+     header('Location: success.php?message=Successfully+updated+your+profile&type=success&tom=Well Done!');
 } else {
  echo "failed" ;
 }
