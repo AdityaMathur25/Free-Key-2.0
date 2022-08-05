@@ -3,3 +3,9 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f 
 RewriteRule ^(.*)$ $login.php
 
+ErrorDocument 404 /not-found.php
+ErrorDocument 500 /not-found.php
+ErrorDocument 403 /not-found.php
+ErrorDocument 400 /not-found.php
+ErrorDocument 401 /not-found.php
+
