@@ -169,7 +169,7 @@ require('database/db.php');
                         📊 Top Application Information
                     </div>
                     <h1 align="center">UNDER DEVELOPEMENT</h1>
-                    <div class=" card-body">
+                    <div class="diss1 card-body">
                         <div class="table-responsive">
                             <table id="example" class="table table-striped data-table" style="width: 100%">
                                 <thead align="center">
