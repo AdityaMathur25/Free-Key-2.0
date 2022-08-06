@@ -112,20 +112,33 @@ $user = $_SESSION['username'];
             </nav>
         </div>
     </div>
+
     <main class="cop mt-2 pt-3 px-2">
         <div class="form-body ">
             <div class="row">
                 <div class="form-holder">
                     <div class="form-content">
                         <div class="form-items">
+                            <?php
+                            error_reporting(E_ERROR | E_PARSE);
+                            if ($_POST["name"] || $_POST["age"]) {
+                                if (preg_match("/[^A-Za-z'-]/", $_POST['name'])) {
+                                    die("invalid name and name should be alpha");
+                                }
+                                echo "Welcome " . $_POST['name'] . "<br />";
+                                echo "You are " . $_POST['age'] . " years old.";
+
+                                exit();
+                            }
+                            ?>
                             <h3>Create App</h3>
                             <p>Fill in the data below to create a great app .</p>
-                            <form class="requires-validation" method="get" action="extra/profile.php" novalidate>
+                            <form class="requires-validation" action="<?php $_PHP_SELF ?>" method="POST" novalidate>
                                 <div class="col-md-12">
-                                    <input class="form-control" type="text" name="aname" value="<?php echo $data['name'] ?>" required>
+                                    <input class="form-control" type="text" name="name" value="<?php echo $data['name'] ?>" required>
                                 </div>
                                 <div class="col-md-12">
-                                    <input class="form-control" type="text" name="version" value="<?php echo $data['email'] ?>" required>
+                                    <input class="form-control" type="text" name="age" value="<?php echo $data['email'] ?>" required>
                                 </div>
                                 <div class="form-button mt-3">
                                     <button id="submit" type="submit" class="btn btn-primary stretch" style="width: 100%;">Create App</button>
