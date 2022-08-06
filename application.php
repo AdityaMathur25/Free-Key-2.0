@@ -111,7 +111,7 @@ require('database/db.php');
         <div class="container-fluid">
             <div class="row p-2">
                 <div class="col-xs-12 col-sm-6 col-md-8 order-2 order-sm-1 ">
-                    <a href="application.php" style="text-decoration: none; color: white;">
+                    <a href="./function/create-app.php" style="text-decoration: none; color: white;">
                         <div class="card bg-primary text-white h-100">
                             <div class="card-body py-5 fs-1 fw-bold fst-italic font-monospace font-italic">Create Application</div>
                     </a>
