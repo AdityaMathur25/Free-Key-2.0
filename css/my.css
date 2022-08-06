@@ -37,7 +37,9 @@
 .pop{
   align-items: center;
 }
-
+.alc{
+  text-align: center;
+}
 @media (max-width: 1399.98px) {
 }
 
@@ -92,4 +94,7 @@
   .pptop{
   padding-top: 80px;
 }
+}
+::-webkit-input-placeholder {
+  text-align: center;
 }

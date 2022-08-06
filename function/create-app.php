@@ -135,8 +135,10 @@ $user = $_SESSION['username'];
                             <p>Fill in the data below to create a great app .</p>
                             <form class="requires-validation" action="<?php $_PHP_SELF ?>" method="POST" novalidate>
                                 <div class="col-md-12">
-                                    <input class="form-control" type="text" name="name" value="<?php echo $data['name'] ?>" required>
+                                    <input class="alc form-control" type="text" name="aname" placeholder="ENTER APPLICATION NAME" required>
+                                    <p class="text-muted" style="text-align: left ; margin-bottom: 0px;">Create a legit name else your app will be removed by admin</p>
                                 </div>
+                                
                                 <div class="col-md-12">
                                     <input class="form-control" type="text" name="age" value="<?php echo $data['email'] ?>" required>
                                 </div>
