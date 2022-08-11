@@ -1,4 +1,11 @@
 <?php
+if(!isset($_SERVER['HTTP_REFERER'])){
+    // redirect them to your desired location
+    header('location:../index.php');
+    exit;
+}
+?>
+<?php
 // include("database/auth_session.php");
 // require('database/db.php');
 $message = $_GET['message'];

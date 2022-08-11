@@ -1,14 +1,15 @@
 <?php
 include("../database/auth_session.php");
 require('../database/db.php');
-$name = $_GET['name'];
-$email = $_GET['email'];
-$number = $_GET['number'];
-$address = $_GET['address'];
-$social = $_GET['Social'];
+$name = $_POST['name'];
+$email = $_POST['email'];
+$number = $_POST['number'];
+$address = $_POST['address'];
+$social = $_POST['Social'];
 $user = $_SESSION['username'];
-$public = $_GET['public'];
+$public = $_POST['public'];
 
+echo $email ;
 // optional
 // echo "You chose the following color(s): <br>";
 
@@ -51,7 +52,7 @@ SET name='$name',
  public = '$public'
  WHERE username='$user'";
  if (mysqli_query($con, $query)) {
-     header('Location: success.php?message=Successfully+updated+your+profile&type=success&tom=Well Done!');
+      header('Location: success.php?message=Successfully+updated+your+profile&type=success&tom=Well Done!');
 } else {
  echo "failed" ;
 }

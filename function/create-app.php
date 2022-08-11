@@ -1,7 +1,7 @@
 <?php
-include("../database/auth_session.php");
-require('../database/db.php');
-$user = $_SESSION['username'];
+// include("database/auth_session.php");
+// require('database/db.php');
+// $user = $_SESSION['username'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -112,58 +112,88 @@ $user = $_SESSION['username'];
             </nav>
         </div>
     </div>
-
     <main class="cop mt-2 pt-3 px-2">
-    <?php
-// define variables and set to empty values
-$name = $email = $gender = $comment = $website = "";
+        
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $name = test_input($_POST["name"]);
-  $email = test_input($_POST["email"]);
-  $website = test_input($_POST["website"]);
-  $comment = test_input($_POST["comment"]);
-  $gender = test_input($_POST["gender"]);
-}
 
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
-?>
 
-<h2>PHP Form Validation Example</h2>
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-  App Name: <input type="text" name="name">
-  <br><br>
-  E-mail: <input type="text" name="email">
-  <br><br>
-  Website: <input type="text" name="website">
-  <br><br>
-  Comment: <textarea name="comment" rows="5" cols="40"></textarea>
-  <br><br>
-  Gender:
-  <input type="radio" name="gender" value="female">Female
-  <input type="radio" name="gender" value="male">Male
-  <input type="radio" name="gender" value="other">Other
-  <br><br>
-  <input type="submit" name="submit" value="Submit">  
-</form>
 
-<?php
-echo "<h2>Your Input:</h2>";
-echo $name;
-echo "<br>";
-echo $email;
-echo "<br>";
-echo $website;
-echo "<br>";
-echo $comment;
-echo "<br>";
-echo $gender;
-?>
+        <div class="form-body ">
+            <div class="row">
+                <div class="form-holder">
+                    <div class="form-content">
+                        <div class="form-items">
+                            <h3>UPDATE DETAILS</h3>
+                            <p>Fill in the data below to update <u>your profile</u> .</p>
+                            <form class="requires-validation" method="post" action="appcreate.php " novalidate>
+
+                                
+                                <div class="col-md-12">
+                                    <input class="form-control" type="text" name="a1"  required>
+
+                                </div>
+                                <div class="col-md-12">
+
+                                    <input class="form-control" type="text" name="a2"  required>
+
+
+                                </div>
+
+
+                                <!-- <div class="col-md-12 ptop">
+                                    
+                                    <input type="hidden" name="public" value="FALSE" >
+                                    <input type="checkbox" name="public" value="TRUE" >
+                                    <label class="form-check-label">I confirm to set my profile as <b>PUBLIC</b></label>
+                                    
+                                </div> -->
+
+
+                                <!-- <div class="col-md-12">
+                                    <select class="form-select mt-3" required>
+                                        <option selected disabled value="">Position</option>
+                                        <option value="jweb">Junior Web Developer</option>
+                                        <option value="sweb">Senior Web Developer</option>
+                                        <option value="pmanager">Project Manager</option>
+                                    </select>
+                                    
+                                </div> -->
+
+
+
+
+
+                                <!-- <div class="col-md-12 mt-3">
+                                    <label class="mb-3 mr-1" for="gender">Gender: </label>
+
+                                    <input type="radio" class="btn-check" name="gender" id="male" autocomplete="off" required>
+                                    <label class="btn btn-sm btn-outline-secondary" for="male">Male</label>
+
+                                    <input type="radio" class="btn-check" name="gender" id="female" autocomplete="off" required>
+                                    <label class="btn btn-sm btn-outline-secondary" for="female">Female</label>
+
+                                    <input type="radio" class="btn-check" name="gender" id="secret" autocomplete="off" required>
+                                    <label class="btn btn-sm btn-outline-secondary" for="secret">Secret</label>
+                                    <div class="valid-feedback mv-up">You selected a gender!</div>
+                                    <div class="invalid-feedback mv-up">Please select a gender!</div>
+                                </div> -->
+
+                                <!-- <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label">I confirm that all data are correct</label>
+                                    <div class="invalid-feedback">Please confirm that the entered data are all correct!</div>
+                                </div> -->
+
+
+                                <div class="form-button mt-3">
+                                    <button id="submit" type="submit" class="btn btn-primary stretch" style="width: 100%;">Update Profile</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
 
@@ -175,7 +205,9 @@ echo $gender;
             <!-- Section: Social media -->
             <section class="mb-2">
                 <!-- Facebook -->
-                <a class="btn btn-primary btn-floating m-1" href=" #!" role="button"><i class="bi bi-facebook"></i></a>
+                <a class="btn btn-primary btn-floating m-1
+        href=" #!" role="button"><i class="bi bi-facebook"></i></a>
+
                 <!-- Twitter -->
                 <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i class="bi bi-twitter"></i></a>
 
