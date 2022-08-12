@@ -114,7 +114,7 @@
         <div class="form-body ">
             <div class="row">
                 <div class="form-holder">
-                    <div class="form-content">
+                    <div class="form-content formb ">
                         <div class="form-items">
                             <h3>Create a new Application</h3>
                             <p>Fill in the data below to update <u>your profile</u> .</p>
