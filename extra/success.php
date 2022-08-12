@@ -11,6 +11,7 @@ if(!isset($_SERVER['HTTP_REFERER'])){
 $message = $_GET['message'];
 $typee = $_GET['type'];
 $tom = $_GET['tom'];
+$link = $_GET['link'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -143,7 +144,7 @@ $tom = $_GET['tom'];
             <p><?php echo $message; ?></p>
             <hr>
             <!-- <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p> -->
-            <p align="center"><button type="button" class="button4 btn btn-primary" onclick="location.href = '/Free-Key-2.0/dashboard.php';">Go Back</button></p>
+            <p align="center"><button type="button" class="button4 btn btn-primary" onclick="location.href = '<?php echo $link ?>';">Go Back</button></p>
 
         </div>
     </main>

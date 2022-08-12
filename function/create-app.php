@@ -51,8 +51,6 @@
                     </li>
                 </ul>
             </div>
-
-
         </div>
     </nav>
     <!-- top navigation bar -->
@@ -113,78 +111,20 @@
         </div>
     </div>
     <main class="cop mt-2 pt-3 px-2">
-        
-
-
-
-
         <div class="form-body ">
             <div class="row">
                 <div class="form-holder">
                     <div class="form-content">
                         <div class="form-items">
-                            <h3>UPDATE DETAILS</h3>
+                            <h3>Create a new Application</h3>
                             <p>Fill in the data below to update <u>your profile</u> .</p>
                             <form class="requires-validation" method="post" action="appcreate.php " novalidate>
-
-                                
                                 <div class="col-md-12">
-                                    <input class="form-control" type="text" name="name"  required>
-
+                                    <input class="form-control" type="text" name="name" required>
                                 </div>
                                 <div class="col-md-12">
-
-                                    <input class="form-control" type="text" name="ver"  required>
-
-
+                                    <input class="form-control" type="text" name="ver" required>
                                 </div>
-
-
-                                <!-- <div class="col-md-12 ptop">
-                                    
-                                    <input type="hidden" name="public" value="FALSE" >
-                                    <input type="checkbox" name="public" value="TRUE" >
-                                    <label class="form-check-label">I confirm to set my profile as <b>PUBLIC</b></label>
-                                    
-                                </div> -->
-
-
-                                <!-- <div class="col-md-12">
-                                    <select class="form-select mt-3" required>
-                                        <option selected disabled value="">Position</option>
-                                        <option value="jweb">Junior Web Developer</option>
-                                        <option value="sweb">Senior Web Developer</option>
-                                        <option value="pmanager">Project Manager</option>
-                                    </select>
-                                    
-                                </div> -->
-
-
-
-
-
-                                <!-- <div class="col-md-12 mt-3">
-                                    <label class="mb-3 mr-1" for="gender">Gender: </label>
-
-                                    <input type="radio" class="btn-check" name="gender" id="male" autocomplete="off" required>
-                                    <label class="btn btn-sm btn-outline-secondary" for="male">Male</label>
-
-                                    <input type="radio" class="btn-check" name="gender" id="female" autocomplete="off" required>
-                                    <label class="btn btn-sm btn-outline-secondary" for="female">Female</label>
-
-                                    <input type="radio" class="btn-check" name="gender" id="secret" autocomplete="off" required>
-                                    <label class="btn btn-sm btn-outline-secondary" for="secret">Secret</label>
-                                    <div class="valid-feedback mv-up">You selected a gender!</div>
-                                    <div class="invalid-feedback mv-up">Please select a gender!</div>
-                                </div> -->
-
-                                <!-- <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                                    <label class="form-check-label">I confirm that all data are correct</label>
-                                    <div class="invalid-feedback">Please confirm that the entered data are all correct!</div>
-                                </div> -->
-
-
                                 <div class="form-button mt-3">
                                     <button id="submit" type="submit" class="btn btn-primary stretch" style="width: 100%;">Update Profile</button>
                                 </div>
@@ -237,7 +177,6 @@
     </div>
     </div>
     </div>
-
 
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
