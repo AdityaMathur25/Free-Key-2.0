@@ -129,12 +129,12 @@
 
                                 
                                 <div class="col-md-12">
-                                    <input class="form-control" type="text" name="a1"  required>
+                                    <input class="form-control" type="text" name="name"  required>
 
                                 </div>
                                 <div class="col-md-12">
 
-                                    <input class="form-control" type="text" name="a2"  required>
+                                    <input class="form-control" type="text" name="ver"  required>
 
 
                                 </div>
