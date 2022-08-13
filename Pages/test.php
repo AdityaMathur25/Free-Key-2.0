@@ -1,18 +1,15 @@
 <?php
-//error_reporting(E_ERROR | E_PARSE);
-$fp = fopen("exclude/adi.php","wb");
-
+if ($thisPage == "Index-EN" || $thisPage == "Index-IT")  {
 ?>
-<html>
-
-<body>
-
-    <form action="<?php $_PHP_SELF ?>" method="POST">
-        Name: <input type="text" name="name" />
-        Age: <input type="text" name="age" />
-        <input type="submit" />
-    </form>
-
-</body>
-
-</html>
+    <li><a href="#" class="scroll-link" data-id="about"><?php echo 'MENU_ABOUT' ?>AAA</a></li>
+    <li><a href="#" class="scroll-link" data-id="gallery"><?php echo 'MENU_GALLERY' ?></a></li>
+    <li><a href="<?php echo 'MENU_CONTACTS_LINK_HOME' ?>"><?php echo 'MENU_CONTACTS' ?></a></li>
+<?php
+} else {
+?>
+    <li><a href="index.php#about" data-id="about"><?php echo 'MENU_ABOUT' ?>BBB</a></li>
+    <li><a href="index.php#gallery" data-id="gallery"><?php echo 'MENU_GALLERY' ?></a></li>
+    <li><a href="<?php echo 'MENU_CONTACTS_LINK' ?>"><?php echo 'MENU_CONTACTS' ?></a></li>
+<?php
+}
+?>
