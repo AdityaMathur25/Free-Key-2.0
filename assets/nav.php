@@ -13,6 +13,7 @@
     <link rel="icon" href="../images/logo.ico">
     <link rel="stylesheet" href="../css/dataTables.bootstrap5.min.css" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/my.css" />
     <title>FreeKey 2.0</title>
 </head>
 
@@ -55,7 +56,7 @@
             <nav class="navbar-dark">
                 <ul class="navbar-nav">
                     <li>
-                        <a href="../Pages/Dashboard.php" class="nav-link px-3 active ">
+                        <a href="../Pages/Dashboard.php" class="nav-link px-3  ">
                             <span class="me-2"><i class="bi bi-columns-gap"></i></span>
                             <span>Dashboard</span>
                         </a>
