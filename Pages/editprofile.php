@@ -1,6 +1,6 @@
 <?php
-include("database/auth_session.php");
-require('database/db.php');
+include("../database/auth_session.php");
+require('../database/db.php');
 $user = $_SESSION['username'];
 ?>
 <!DOCTYPE html>
@@ -10,14 +10,13 @@ $user = $_SESSION['username'];
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
-    <link rel="icon" href="images/logo.ico">
-    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/my.css" />
-    <link rel="stylesheet" href="css/jp.css" />
-
+    <link rel="icon" href="../images/logo.ico">
+    <link rel="stylesheet" href="../css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/my.css" />
+    <link rel="stylesheet" href="../css/jp.css" />
     <title>FreeKey 2.0</title>
 </head>
 
@@ -40,7 +39,7 @@ $user = $_SESSION['username'];
                             <li>
                                 <a class="dropdown-item" href="#">Contact Support</a>
                             </li>
-                            <li><a class="dropdown-item" style="border:3px red solid;" href="logout.php">Log Out</a></li>
+                            <li><a class="dropdown-item" style="border:3px red solid;" href="../Pages/logout.php">Log Out</a></li>
                             <li class="dropdown-item">
                                 <label for="border2">
                                     <input checked="false" type="checkbox" id="border2" />

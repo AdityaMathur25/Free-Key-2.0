@@ -5,9 +5,9 @@
                 <meta charset="UTF-8">
                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <link rel="stylesheet" href="css/login.css">
+                <link rel="stylesheet" href="../css/login.css">
 
-                <link rel="icon" href="images/logo.ico">
+                <link rel="icon" href="../images/logo.ico">
                 <title>Login</title>
             </head>
 
@@ -15,7 +15,7 @@
                 <?php
 
                 // include("auth_session.php");
-                require('database/db.php');
+                require('../database/db.php');
                 session_start();
                 $uip = $_SERVER['REMOTE_ADDR'];
                 // When form submitted, check and create user session.
@@ -64,14 +64,14 @@
                             <p class="text-small">Log in to your account to continue.</p>
                         </header>
                         <div class="logo-image">
-                            <img src="images/logo.png" id="logo">
+                            <img src="../images/logo.png" id="logo">
                         </div>
                         <section class="form-container">
                             <form method="post" name="login">
                                 <div class="input-entity">
                                     <label for="user" class="text-small-bold text-small labels">USERNAME</label>
                                     <input type="text" name="username" placeholder="e.g. Noisy01" id="user">
-                                    <img src="images/user.png" class="icon">
+                                    <img src="../images/user.png" class="icon">
                                 </div>
 
                                 <div class="input-entity">
@@ -80,9 +80,9 @@
                                         <a href="#" class="text-small-bold text-small">Forgot Password ?</a>
                                     </div>
                                     <input type="password" name="password" placeholder="Password" id="pass">
-                                    <img src="images/lock.png" class="icon">
+                                    <img src="../images/lock.png" class="icon">
                                     <i id="icon" class="fa-duotone fa-eye"></i>
-                                    <img src="images/eye.png" id="eye" class="icon eye">
+                                    <img src="../images/eye.png" id="eye" class="icon eye">
 
                                 </div>
 
@@ -99,10 +99,10 @@
                         eye.addEventListener('click', function(e) {
                             if (x.type === "password") {
                                 x.type = "text";
-                                eye.src = "images/eye-slash.png";
+                                eye.src = "../images/eye-slash.png";
                             } else {
                                 x.type = "password";
-                                eye.src = "images/eye.png";
+                                eye.src = "../images/eye.png";
                             }
                         });
                     </script>

@@ -22,35 +22,34 @@
 </head>
 
 <body style="background-color: #eee ;">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="offcanvasExample">
                 <span class="navbar-toggler-icon" data-bs-target="#sidebar"></span>
             </button>
-            <a class="navbar-brand me-auto ms-lg-0 ms-3 text-uppercase fw-bold" href="#"> 🔑 FreeKey 2.0</a>
-            <div class="noisy">
-                <ul class="navbar-nav">
-                    <li class=" nav-item dropdown dropdown">
-                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown">
-                            <i class="bi bi-person-fill"></i>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end">
+            <a class="navbar-brand me-auto ms-lg-0 ms-3 text-uppercase fw-bold" href="../Pages/Dashboard.php"> 🔑 FreeKey 2.0</a>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle ms-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person-fill"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
 
-                            <li><a class="dropdown-item" href="#">Profile Settings</a></li>
-                            <li>
-                                <a class="dropdown-item" href="#">Contact Support</a>
-                            </li>
-                            <li><a class="dropdown-item" style="border:3px red solid;" href="logout.php">Log Out</a></li>
-                            <li class="dropdown-item">
-                                <label for="border2">
-                                    <input checked="false" type="checkbox" id="border2" />
-                                    Default Mode
-                                </label>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+                        <li><a class="dropdown-item" href="../Pages/profile.php">Profile Settings</a></li>
+                        <li>
+                            <a class="dropdown-item" href="#">Contact Support</a>
+                        </li>
+                        <li><a class="dropdown-item" style="border:3px red solid;" href="../Pages/logout.php">Log Out</a></li>
+                        <li class="dropdown-item">
+                            <label for="border2">
+                                <input checked="false" type="checkbox" id="border2" />
+                                Default Mode
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
         </div>
     </nav>
     <!-- top navigation bar -->
@@ -60,7 +59,7 @@
             <nav class="navbar-dark">
                 <ul class="navbar-nav">
                     <li>
-                        <a href="Dashboard.php" class="nav-link px-3 ">
+                        <a href="../Pages/Dashboard.php" class="nav-link px-3 ">
                             <span class="me-2"><i class="bi bi-columns-gap"></i></span>
                             <span>Dashboard</span>
                         </a>
@@ -69,19 +68,19 @@
                         <hr class="dropdown-divider bg-light" />
                     </li>
                     <li>
-                        <a href="application.php" class="nav-link px-3 ">
+                        <a href="../Pages/application.php" class="nav-link px-3 active">
                             <span class="me-2"><i class="bi bi-layers"></i></span>
                             <span>Application</span>
                         </a>
                     </li>
                     <li>
-                        <a href="profile.php" class="nav-link px-3 active">
+                        <a href="../Pages/profile.php" class="nav-link px-3">
                             <span class="me-2"><i class="bi bi-person-circle"></i></span>
                             <span>Profile</span>
                         </a>
                     </li>
                     <li>
-                        <a href="Community.php" class="nav-link px-3 ">
+                        <a href="../Pages/Community.php" class="nav-link px-3">
                             <span class="me-2"><i class="bi bi-people"></i></span>
                             <span>Community</span>
                         </a>
@@ -126,7 +125,7 @@
                                     <input class="form-control" type="text" name="ver" placeholder="Enter The Application Version" required>
                                 </div>
                                 <div class="form-button mt-3">
-                                    <button id="submit" type="submit" class="btn btn-primary stretch" style="width: 100%;">Update Profile</button>
+                                    <button id="submit" type="submit" class="btn btn-primary stretch" style="width: 100%;">Create</button>
                                 </div>
                             </form>
                         </div>

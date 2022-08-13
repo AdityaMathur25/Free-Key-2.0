@@ -24,7 +24,7 @@
                     <a href="terms.html">terms</a>
                 </div>
                 <div class="sign-in">
-                    <a href="login.php" class="login-btn">
+                    <a href="./Pages/login.php" class="login-btn">
                         <span></span>
                         <span></span>
                         <span></span>

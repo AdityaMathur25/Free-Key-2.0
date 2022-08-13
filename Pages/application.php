@@ -1,6 +1,6 @@
 <?php
-include("database/auth_session.php");
-require('database/db.php');
+include("../database/auth_session.php");
+require('../database/db.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,11 +9,11 @@ require('database/db.php');
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
-    <link rel="icon" href="images/logo.ico">
-    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="../images/logo.ico">
+    <link rel="stylesheet" href="../css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>FreeKey 2.0</title>
 </head>
 
@@ -24,7 +24,7 @@ require('database/db.php');
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="offcanvasExample">
                 <span class="navbar-toggler-icon" data-bs-target="#sidebar"></span>
             </button>
-            <a class="navbar-brand me-auto ms-lg-0 ms-3 text-uppercase fw-bold" href="#"> 🔑 FreeKey 2.0</a>
+            <a class="navbar-brand me-auto ms-lg-0 ms-3 text-uppercase fw-bold" href="../Pages/Dashboard.php"> 🔑 FreeKey 2.0</a>
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle ms-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -32,11 +32,11 @@ require('database/db.php');
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end">
 
-                        <li><a class="dropdown-item" href="#">Profile Settings</a></li>
+                        <li><a class="dropdown-item" href="../Pages/profile.php">Profile Settings</a></li>
                         <li>
                             <a class="dropdown-item" href="#">Contact Support</a>
                         </li>
-                        <li><a class="dropdown-item" style="border:3px red solid;" href="logout.php">Log Out</a></li>
+                        <li><a class="dropdown-item" style="border:3px red solid;" href="../Pages/logout.php">Log Out</a></li>
                         <li class="dropdown-item">
                             <label for="border2">
                                 <input checked="false" type="checkbox" id="border2" />
@@ -56,7 +56,7 @@ require('database/db.php');
             <nav class="navbar-dark">
                 <ul class="navbar-nav">
                     <li>
-                        <a href="Dashboard.php" class="nav-link px-3 ">
+                        <a href="../Pages/Dashboard.php" class="nav-link px-3 ">
                             <span class="me-2"><i class="bi bi-columns-gap"></i></span>
                             <span>Dashboard</span>
                         </a>
@@ -65,19 +65,19 @@ require('database/db.php');
                         <hr class="dropdown-divider bg-light" />
                     </li>
                     <li>
-                        <a href="#" class="nav-link px-3 active">
+                        <a href="../Pages/application.php" class="nav-link px-3 active">
                             <span class="me-2"><i class="bi bi-layers"></i></span>
                             <span>Application</span>
                         </a>
                     </li>
                     <li>
-                        <a href="profile.php" class="nav-link px-3">
+                        <a href="../Pages/profile.php" class="nav-link px-3">
                             <span class="me-2"><i class="bi bi-person-circle"></i></span>
                             <span>Profile</span>
                         </a>
                     </li>
                     <li>
-                        <a href="Community.php" class="nav-link px-3">
+                        <a href="../Pages/Community.php" class="nav-link px-3">
                             <span class="me-2"><i class="bi bi-people"></i></span>
                             <span>Community</span>
                         </a>
@@ -111,7 +111,7 @@ require('database/db.php');
         <div class="container-fluid">
             <div class="row p-2">
                 <div class="col-xs-12 col-sm-6 col-md-8 order-2 order-sm-1 ">
-                    <a href="./function/create-app.php" style="text-decoration: none; color: white;">
+                    <a href="../function/create-app.php" style="text-decoration: none; color: white;">
                         <div class="card bg-primary text-white h-100">
                             <div class="card-body py-5 fs-1 fw-bold fst-italic font-monospace font-italic">Create Application</div>
                     </a>
@@ -252,13 +252,13 @@ require('database/db.php');
         </div>
 
     </main>
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
-    <script src="./js/jquery-3.5.1.js"></script>
-    <script src="./js/jquery.dataTables.min.js"></script>
-    <script src="./js/dataTables.bootstrap5.min.js"></script>
-    <script src="./js/script.js"></script>
-    <script src="./js/my.js"></script>
+    <script src="../js/jquery-3.5.1.js"></script>
+    <script src="../js/jquery.dataTables.min.js"></script>
+    <script src="../js/dataTables.bootstrap5.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/my.js"></script>
 
 
 </body>
