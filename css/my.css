@@ -16,8 +16,8 @@
 .borderop {
   border: 20px red solid;
 }
-.cop{
-    margin-bottom: 80px;
+.cop {
+  margin-bottom: 80px;
 }
 
 @media (max-width: 575.98px) {
@@ -34,10 +34,10 @@
     border: 2px red solid;
   }
 } */
-.pop{
+.pop {
   align-items: center;
 }
-.alc{
+.alc {
   text-align: center;
 }
 @media (max-width: 1399.98px) {
@@ -60,18 +60,15 @@
         display: none; 
       }
 } */
-.diss1{
-
+.diss1 {
   pointer-events: none;
   opacity: 0.4;
 }
-.doubleunderline{
-
-    text-decoration:underline;
-    border-bottom: 1px solid #000;
-
+.doubleunderline {
+  text-decoration: underline;
+  border-bottom: 1px solid #000;
 }
-.numberr{
+.numberr {
   margin-bottom: 0px;
   margin-top: 2px;
   font-size: smaller;
@@ -79,28 +76,24 @@
 
 .foot {
   position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height:60px;
-    background:#ccc;
-
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: #ccc;
 }
-.button4 {padding:  10px 60px;}
-.ptop{
+.button4 {
+  padding: 10px 60px;
+}
+.ptop {
   padding-top: 7px;
 }
-@media only screen and (min-width:992px){
-  .pptop{
-  padding-top: 80px;
-}
+@media only screen and (min-width: 992px) {
+  .pptop {
+    padding-top: 80px;
+  }
 }
 ::-webkit-input-placeholder {
   text-align: center;
 }
-.formb{
-  padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-}
+

@@ -1,17 +1,18 @@
 <?php
 if(!isset($_SERVER['HTTP_REFERER'])){
     // redirect them to your desired location
-    header('location:../index.php');
+    header('location:../dashboard.php');
     exit;
 }
 ?>
 <?php
-// include("database/auth_session.php");
+ include("../database/auth_session.php");
 // require('database/db.php');
+error_reporting(E_ERROR | E_PARSE);
 $message = $_GET['message'];
 $typee = $_GET['type'];
 $tom = $_GET['tom'];
-$link = $_GET['link'];
+$link = $_GET['link'] ?? '../dashboard.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">

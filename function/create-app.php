@@ -117,13 +117,13 @@
                     <div class="form-content formb ">
                         <div class="form-items">
                             <h3>Create a new Application</h3>
-                            <p>Fill in the data below to update <u>your profile</u> .</p>
+                            <p>Fill in the data below to create <u>Your Application</u></p>
                             <form class="requires-validation" method="post" action="appcreate.php " novalidate>
                                 <div class="col-md-12">
-                                    <input class="form-control" type="text" name="name" required>
+                                    <input class="form-control" type="text" name="name" placeholder="Enter The Application Name" required>
                                 </div>
                                 <div class="col-md-12">
-                                    <input class="form-control" type="text" name="ver" required>
+                                    <input class="form-control" type="text" name="ver" placeholder="Enter The Application Version" required>
                                 </div>
                                 <div class="form-button mt-3">
                                     <button id="submit" type="submit" class="btn btn-primary stretch" style="width: 100%;">Update Profile</button>
