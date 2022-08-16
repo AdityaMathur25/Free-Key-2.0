@@ -128,13 +128,13 @@ require('../database/db.php');
             </div>
             <br>
             <div class="col-xs-12 col-sm-6 col-md-4 order-2 order-sm-2">
-                <a href="application.php" style="text-decoration: none; color: white;">
+                <a href="../function/gen-key.php" style="text-decoration: none; color: white;">
                     <div class="card bg-danger text-white h-100">
                         <div class="card-body py-5 fs-1 fst-italic  fw-bold font-monospace ">Generate Keys</div>
                         <div class="card-footer d-flex">
                             More Details
                             <span class="ms-auto">
-                                <a style="color: white;text-decoration: none;" href="#">
+                                <a style="color: white;text-decoration: none;" href="../function/gen-key.php">
                                     <i class="bi bi-chevron-right"></i></a>
                             </span>
                         </div>
