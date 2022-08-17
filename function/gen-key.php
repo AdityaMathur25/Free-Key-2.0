@@ -1,14 +1,16 @@
 <?php
 include '../assets/nav.php'
 ?>
-<main class="cop mt-2 pt-3 px-2">
-    <span></span>
-    <div>
-        <h1 align="center">KEYGENERATOR</h1>
-    </div>
-        
+<main class="mt-5 pt-3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 text-center text-uppercase">
+            <h4>Generate Key</h4>
+          </div>
+        </div>
+      </div>
+</main>
 
-    </main>
 <?php
 include '../assets/footer.php'
 ?>

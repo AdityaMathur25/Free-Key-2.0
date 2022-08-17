@@ -128,7 +128,7 @@ $user = $_SESSION['username'];
                         <div class="form-items">
                             <h3>UPDATE DETAILS</h3>
                             <p>Fill in the data below to update <u>your profile</u> .</p>
-                            <form class="requires-validation" method="Post" action="extra/profile.php" novalidate>
+                            <form class="requires-validation" method="Post" action="../extra/profile.php" novalidate>
 
                                 <div class="col-md-12">
                                     <input class="form-control" type="text" name="name" value="<?php echo $data['name'] ?>" required>
