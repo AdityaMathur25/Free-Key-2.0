@@ -54,9 +54,13 @@
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     margin-top: 16px;
-} 
-    /* .form-content .form-items {
-        border: 3px solid #fff;
+}
+ .form-items {
+        
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+ }
+   /*  
         padding: 40px;
         display: inline-block;
         width: 100%;
@@ -65,8 +69,7 @@
         -moz-border-radius: 10px;
         border-radius: 10px;
         text-align: left;
-        -webkit-transition: all 0.4s ease;
-        transition: all 0.4s ease;
+        
     }
 
 
