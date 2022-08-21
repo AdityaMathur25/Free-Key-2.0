@@ -1,8 +1,8 @@
 <?php
 include("../assets/link.php");
 include '../assets/nav.php';
-require('../database/db.php');
-include("../database/auth_session.php");
+// require('../database/db.php');
+// include("../database/auth_session.php");
 
 $db = $_POST['name'];
 $keys = $_POST['numberr'];
@@ -99,9 +99,8 @@ include '../assets/footer.php';
 
 </body>
 ?>
-<!-- <script>
+<script>
         window.onload = function() {
             history.replaceState("", "", "../extra/success.php?message=Page+Refresh+Is+Not+Allowed&type=danger&tom=Sorry+🙇");
         }
-    </script> -->
-    <? ob_flush(); ?>
+    </script>
