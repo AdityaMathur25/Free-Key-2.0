@@ -1,5 +1,9 @@
+
 <?php
 //$a = $_GET['a'];
+include("../database/auth_session.php");
+    // Connect to database 
+    require('../database/db.php');    
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -124,7 +124,7 @@ $user = $_SESSION['username'];
         <div class="form-body ">
             <div class="row">
                 <div class="form-holder">
-                    <div class="form-content">
+                    <div class="form-content"   style="top: 16px;"  >
                         <div class="form-items">
                             <h3>UPDATE DETAILS</h3>
                             <p>Fill in the data below to update <u>your profile</u> .</p>
