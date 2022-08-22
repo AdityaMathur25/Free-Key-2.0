@@ -25,15 +25,14 @@ function random_str(
 if (empty($db && $keys)) {
     echo "<script>location.href='../extra/success.php?message=Appname+or+version+cannot+be+empty&type=danger&tom=Sorry+!!!&link=../function/gen-key.php';</script>";
     // header('Location: ../extra/success.php?message=Appname+or+version+cannot+be+empty&type=danger&tom=Sorry+!!!&link=../function/create-app.php');
-}
- else {
+} else {
 ?>
-    <main class="mt-5 pt-3 px-2">
+    <main class="mt-5 pt-3 px-2" style="margin-bottom: 150px;">
         <div class="card mx-auto" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title cards">Card title</h5>
+            <div class="card-body" style="padding-bottom:0px;">
+                <h5 class="card-title cards">Your Keys</h5>
                 <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                <p class="card-text" id="div1" style="text-align:center;">
+                <p class="card-text" id="div1" style="text-align:center; ">
 
 
                     <?php
@@ -68,8 +67,9 @@ if (empty($db && $keys)) {
 
                         echo $ca . "<br>";
                     } ?>
-                    <button id="button1" onclick="CopyToClipboard('div1')" class="btn btn-primary stretch" style="width: 100%;">Copy all keys</button>
-            </div>
+                   
+
+            </div> <button id="button1" onclick="CopyToClipboard('div1')" class="btn btn-primary stretch" style="width: 100%;">Copy all keys</button>
         </div>
     </main>
 
@@ -80,27 +80,30 @@ if (empty($db && $keys)) {
 include '../assets/footer.php';
 ?>
 
-    <script>
-        function CopyToClipboard(containerid) {
-            if (document.selection) {
-                var range = document.body.createTextRange();
-                range.moveToElementText(document.getElementById(containerid));
-                range.select().createTextRange();
-                document.execCommand("copy");
-            } else if (window.getSelection) {
-                var range = document.createRange();
-                range.selectNode(document.getElementById(containerid));
-                window.getSelection().addRange(range);
-                document.execCommand("copy");
-                alert("Text has been copied, now paste in the text-area")
-            }
-        }
-    </script>
+<script>
+    function CopyToClipboard(containerid) {
+        // Create a new textarea element and give it id='temp_element'
+        const textarea = document.createElement('textarea')
+        textarea.id = 'temp_element'
+        // Optional step to make less noise on the page, if any!
+        textarea.style.height = 0
+        // Now append it to your page somewhere, I chose <body>
+        document.body.appendChild(textarea)
+        // Give our textarea a value of whatever inside the div of id=containerid
+        textarea.value = document.getElementById(containerid).innerText
+        // Now copy whatever inside the textarea to clipboard
+        const selector = document.querySelector('#temp_element')
+        selector.select()
+        document.execCommand('copy')
+        // Remove the textarea
+        document.body.removeChild(textarea)
+    }
+</script>
 
 </body>
 ?>
 <script>
-        window.onload = function() {
-            history.replaceState("", "", "../extra/success.php?message=Page+Refresh+Is+Not+Allowed&type=danger&tom=Sorry+🙇");
-        }
-    </script>
+    window.onload = function() {
+        history.replaceState("", "", "../extra/success.php?message=Page+Refresh+Is+Not+Allowed&type=danger&tom=Sorry+🙇");
+    }
+</script>
