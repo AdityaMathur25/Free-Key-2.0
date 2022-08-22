@@ -1,7 +1,7 @@
 
 setInterval(() => {
     if (document.getElementById("border1").checked) {
-  
+      document.getElementById("checkbox").checked = false;
     } else {
       window.location.href = '../Pages/application.php';
     }
@@ -9,7 +9,7 @@ setInterval(() => {
   }, 1000);
   setInterval(() => {
     if (document.getElementById("border2").checked) {
-
+      document.getElementById("checkbox").checked = false;
     } else {
       
       window.location.href = '../Pages/app1.php';

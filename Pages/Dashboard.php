@@ -34,7 +34,7 @@
 
               <li><a class="dropdown-item" href="../Pages/profile.php">Profile Settings</a></li>
               <li>
-                <a class="dropdown-item" href="#">Contact Support</a>
+                <a class="dropdown-item" href="https://wa.me/+918104537999/?text=Please+Help+Me+I+Need+Assistance">Contact Support</a>
               </li>
               <li><a class="dropdown-item" style="border:3px red solid;" href="../Pages/logout.php">Log Out</a></li>
               <!-- <li class="dropdown-item">

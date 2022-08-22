@@ -67,15 +67,9 @@ $i++;
                     <ul class="dropdown-menu dropdown-menu-end">
 
                         <li><a class="dropdown-item" href="../Pages/profile.php">Profile Settings</a></li>
-                        <li>
-                            <a class="dropdown-item" href="#">Contact Support</a>
-                        </li>
                         <li><a class="dropdown-item" style="border:3px red solid;" href="../Pages/logout.php">Log Out</a></li>
                         <li class="dropdown-item">
-                            <label for="border2">
-                                <input checked="false" type="checkbox" id="border2" />
-                                Default Mode
-                            </label>
+                            <button type="button" class="btn ms-1" onclick="location.href = '../Pages/application.php'">Detailed View</button>
                         </li>
                     </ul>
                 </li>
@@ -143,6 +137,21 @@ $i++;
     <!-- offcanvas -->
     <main class="mt-5 pt-3">
         <div class="container-fluid">
+            
+            <div class="col-xs-12 col-sm-6 col-md-8 order-2 order-sm-1 ">
+                    <a href="../function/create-app.php" style="text-decoration: none; color: white;">
+                        <div class="card bg-primary text-white h-100">
+                            <div class="card-body py-5 fs-1 fw-bold fst-italic font-monospace font-italic">Create Application</div>
+                    </a>
+                    <div class="card-footer d-flex">
+                        More Details
+                        <span class="ms-auto">
+                            <a style="color: white;text-decoration: none;" href="#">
+                                <i class="bi bi-chevron-right"></i></a>
+                        </span>
+                    </div>
+                </div>
+        </div>
             <div class="row p-2">
                 <?php echo $tab_content; ?>
 

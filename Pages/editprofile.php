@@ -36,16 +36,7 @@ $user = $_SESSION['username'];
                         <ul class="dropdown-menu dropdown-menu-end">
 
                             <li><a class="dropdown-item" href="#">Profile Settings</a></li>
-                            <li>
-                                <a class="dropdown-item" href="#">Contact Support</a>
-                            </li>
                             <li><a class="dropdown-item" style="border:3px red solid;" href="../Pages/logout.php">Log Out</a></li>
-                            <li class="dropdown-item">
-                                <label for="border2">
-                                    <input checked="false" type="checkbox" id="border2" />
-                                    Default Mode
-                                </label>
-                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -213,7 +204,7 @@ $user = $_SESSION['username'];
 
 
     </div>
-    <footer class="footer" style=" align-items: center;">
+    <footer class="footer" >
         <!-- Grid container -->
         <div class="container p-2 pb-0 ">
             <!-- Section: Social media -->
