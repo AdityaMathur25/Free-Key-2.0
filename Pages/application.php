@@ -259,6 +259,7 @@ require('../database/db.php');
     <script src="../js/dataTables.bootstrap5.min.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/my.js"></script>
+    <script src="../js/pg_redirect.js"></script>
 
 
 </body>

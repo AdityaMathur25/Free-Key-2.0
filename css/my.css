@@ -95,6 +95,12 @@
   .pptop {
     padding-top: 80px;
   }
+  .textareaa{
+    width: 500px;
+  }
+  .foot{
+    padding-left: 10%;
+  }
 }
 ::-webkit-input-placeholder {
   text-align: center;

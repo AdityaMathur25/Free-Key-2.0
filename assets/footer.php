@@ -1,5 +1,5 @@
 <!-- //<link rel="stylesheet" href="../css/my.css"> -->
-<footer class="footer bg-light text-center text-white">
+<footer class="footer foot bg-light text-center text-white">
         <!-- Grid container -->
         <div class="container p-4 pb-0">
             <!-- Section: Social media -->
@@ -27,7 +27,7 @@
         <!-- Grid container -->
 
         <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgb(33, 37, 41);">
+        <div class="text-center " style="background-color: rgb(33, 37, 41);">
             © 2022 Copyright:
             <a class="text-white" href="#" style="text-decoration: none;">🔑 FREEKEY 2.0</a>
             <!-- </div> -->
