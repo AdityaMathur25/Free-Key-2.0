@@ -12,7 +12,7 @@ setInterval(() => {
 
     } else {
       
-      window.location.href = '../Pages/app2.php';
+      window.location.href = '../Pages/app1.php';
   
     }
   }, 100);

@@ -37,12 +37,12 @@
                 <a class="dropdown-item" href="#">Contact Support</a>
               </li>
               <li><a class="dropdown-item" style="border:3px red solid;" href="../Pages/logout.php">Log Out</a></li>
-              <li class="dropdown-item">
+              <!-- <li class="dropdown-item">
                 <label for="border2">
                   <input checked="false" type="checkbox" id="border2" />
                   Default Mode
                 </label>
-              </li>
+              </li> -->
             </ul>
           </li>
         </ul>
@@ -169,7 +169,7 @@
               <div class="card-footer d-flex">
                 More Details
                 <span class="ms-auto">
-                  <a style="color: white;text-decoration: none;" href="#">
+                  <a style="color: white;text-decoration: none;" href="../function/gen-key.php">
                     <i class="bi bi-chevron-right"></i></a>
                 </span>
               </div>
