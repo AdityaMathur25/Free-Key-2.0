@@ -137,8 +137,8 @@ $i++;
     <!-- offcanvas -->
     <main class="mt-5 pt-3">
         <div class="container-fluid">
-            
-            <div class="col-xs-12 col-sm-6 col-md-8 order-2 order-sm-1 ">
+        <div class="row p-2">
+            <div class="col-xs-12 col-sm-6 col-md-8 ">
                     <a href="../function/create-app.php" style="text-decoration: none; color: white;">
                         <div class="card bg-primary text-white h-100">
                             <div class="card-body py-5 fs-1 fw-bold fst-italic font-monospace font-italic">Create Application</div>
@@ -152,6 +152,20 @@ $i++;
                     </div>
                 </div>
         </div>
+        
+        <div class="col-xs-12 col-sm-6 col-md-4">
+                <a href="../function/gen-key.php" style="text-decoration: none; color: white;">
+                    <div class="card bg-danger text-white h-100">
+                        <div class="card-body py-5 fs-1 fst-italic  fw-bold font-monospace ">Generate Keys</div>
+                        <div class="card-footer d-flex">
+                            More Details
+                            <span class="ms-auto">
+                                <a style="color: white;text-decoration: none;" href="../function/gen-key.php">
+                                    <i class="bi bi-chevron-right"></i></a>
+                            </span>
+                        </div>
+                    </div>
+            </div>
             <div class="row p-2">
                 <?php echo $tab_content; ?>
 
