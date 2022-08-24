@@ -14,11 +14,12 @@ require('../database/db.php');
     <link rel="icon" href="../images/logo.ico">
     <link rel="stylesheet" href="../css/dataTables.bootstrap5.min.css" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/my.css">
     <title>FreeKey 2.0</title>
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="offcanvasExample">
                 <span class="navbar-toggler-icon" data-bs-target="#sidebar"></span>
@@ -156,7 +157,7 @@ require('../database/db.php');
                         📊 Top Application Information
                     </div>
                     <h1 align="center">UNDER DEVELOPEMENT</h1>
-                    <div class=" card-body">
+                    <div class=" diss1 card-body">
                         <div class="table-responsive">
                             <table id="example" class="table table-striped data-table" style="width: 100%">
                                 <thead align="center">
@@ -224,9 +225,9 @@ require('../database/db.php');
     </main>
 
     </div>
-    <footer class="bg-light text-center text-white">
+    <footer class="bg-light text-center text-white myfutto ">
         <!-- Grid container -->
-        <div class="container p-4 pb-0">
+        <div class=" container p-4 pb-0">
             <!-- Section: Social media -->
             <section class="mb-4">
                 <!-- Facebook -->

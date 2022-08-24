@@ -257,7 +257,7 @@ $user = $_SESSION['username'];
   </main>
 
   </div>
-  <footer class="footer ">
+  <footer class="myfutto footer ">
     <!-- Grid container -->
     <div class="container p-2 pb-0 ">
       <!-- Section: Social media -->

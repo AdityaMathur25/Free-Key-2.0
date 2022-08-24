@@ -8,7 +8,7 @@ $connect = mysqli_connect("localhost", "root", "", "adityama_demo1");
 $tab_menu = '';
 $tab_content = '';
 $i = 0;
-$product_query = "SELECT app FROM dataa ";
+$product_query = "SELECT * FROM `dataa` where user = '" . $_SESSION['username'] . "' ";
 $product_result = mysqli_query($connect, $product_query);
 while ($sub_row = mysqli_fetch_array($product_result)) {
     $tab_content .= '
@@ -20,7 +20,7 @@ while ($sub_row = mysqli_fetch_array($product_result)) {
                   <p class="card-text"> ' . $sub_row["app"] . '</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                     <button type="button" class="btn btn-sm btn-outline-secondary"><a href="../function/view.php?app='. $sub_row["app"] . ' ">View</a></button>
                       <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                     </div>
                     <small class="text-muted">9 mins</small>
