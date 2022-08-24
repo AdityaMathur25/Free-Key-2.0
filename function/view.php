@@ -3,11 +3,12 @@ include '../assets/link.php';
 include '../database/db.php';
 include '../database/auth_session.php';
 $app = $_GET['app'];
-
-
-
-?>
-<div class="row">
+$sql1 = "SELECT * FROM `dataa` where app = '" . $app . "' And user = '". $_SESSION['username'] ."' ";
+$result1 = mysqli_query($con, $sql1);
+if (  mysqli_num_rows($result1) > 0) {
+    echo "Table Present";
+    ?>
+    <div class="row">
     <div class="col-md-12 mb-3">
         <div class="card">
             <div class="card-header text-center">
@@ -67,4 +68,15 @@ $app = $_GET['app'];
         </div>
         <?php
         include '../assets/scripts.php';
-        ?>
+        ?><?php
+} else {
+    echo "not present";
+    // header("Location:../extra/success.php?message=Server+side+error+contact+later+.+&type=danger&tom=Sorry+!!!&link=../Pages/app1.php");
+    // header('Location: ../extra/success.php?message=App+successfully+created+and+deployed&type=success&tom=Well+done+🙌&link=../function/create-app.php');
+    ?>
+    <script type="text/javascript">
+window.location.href = '../extra/success.php?message=Server+side+error+contact+later+.+&type=danger&tom=Sorry+!!!&link=../Pages/app1.php';
+</script>
+<?php
+}
+?>
