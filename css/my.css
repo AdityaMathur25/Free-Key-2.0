@@ -124,3 +124,5 @@
   text-align: center;
   border-bottom : 5px grey solid;
 }
+.problem {text-align:center}
+.enclose {position:fixed;bottom:0px;width:100%;}

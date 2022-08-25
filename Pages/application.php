@@ -176,10 +176,10 @@ require('../database/db.php');
                                             <td><?php $man = $data['app'];
                                                 $cnt = mysqli_num_rows(mysqli_query($con, "SELECT * FROM $man;"));
                                                 echo $cnt ?></td>
-                                            <td><a href="current.php?app=<?php echo $data['app']; ?>">View</a></td>
+                                            <td><a href="../function/view.php?app=<?php echo $data['app']; ?>">View</a></td>
                                             <td><?php echo $data['hwid']; ?></td>
-                                            <td><a href="edit.php?id=<?php echo $data['id']; ?>&pname=<?php echo $data['app']; ?>&veri=<?php echo $data['veri']; ?>&updatep=<?php echo $data['links']; ?>">Edit</a></td>
-                                            <td><a href="delete.php?id=<?php echo $data['id']; ?>&app=<?php echo $data['app']; ?>">Delete</a></td>
+                                            <td><a href="../extra/edit.php?id=<?php echo $data['id']; ?>&pname=<?php echo $data['app']; ?>&veri=<?php echo $data['veri']; ?>&updatep=<?php echo $data['links']; ?>">Edit</a></td>
+                                            <td><a href="../extra/delete_app.php?id=<?php echo $data['id']; ?>&app=<?php echo $data['app']; ?>">Delete</a></td>
                                         </tr>
 
                                     <?php

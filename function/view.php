@@ -2,11 +2,12 @@
 include '../assets/link.php';
 include '../database/db.php';
 include '../database/auth_session.php';
+include '../assets/nav-top.php';
 $app = $_GET['app'];
 $sql1 = "SELECT * FROM `dataa` where app = '" . $app . "' And user = '". $_SESSION['username'] ."' ";
 $result1 = mysqli_query($con, $sql1);
 if (  mysqli_num_rows($result1) > 0) {
-    echo "Table Present";
+    // echo "Table Present";
     ?>
     <div class="row">
     <div class="col-md-12 mb-3">
@@ -41,7 +42,7 @@ if (  mysqli_num_rows($result1) > 0) {
                                     <td><?php echo $data['keyy']; ?></td>
                                     <td><?php echo $data['exp']; ?></td>
                                     <td><?php $man = $data['hwid']; ?></td>
-                                    <td><a href="delete1.php?id=<?php echo $data['keyy']; ?>&app=<?php echo $app; ?> "> Delete</a></td>
+                                    <td><a href="../extra/delete_key.php?id=<?php echo $data['keyy']; ?>&app=<?php echo $app; ?> "> Delete</a></td>
                                 </tr>
 
                             <?php
@@ -75,8 +76,15 @@ if (  mysqli_num_rows($result1) > 0) {
     // header('Location: ../extra/success.php?message=App+successfully+created+and+deployed&type=success&tom=Well+done+🙌&link=../function/create-app.php');
     ?>
     <script type="text/javascript">
-window.location.href = '../extra/success.php?message=Server+side+error+contact+later+.+&type=danger&tom=Sorry+!!!&link=../Pages/app1.php';
+window.location.href = '../extra/success.php?message=Server+side+error+connect+later+.+&type=danger&tom=Sorry+🥺&link=../Pages/app1.php';
 </script>
 <?php
 }
 ?>
+<div class="container text-center" style="padding-top:8%">
+      <div class="row">
+    <div class="col-md-6 offset-md-3">
+    <a href="../Pages/app1.php"><button type="button" class="btn btn-primary btn-lg">Back To Main Page</button></a>
+    </div>
+  </div>
+</div>
