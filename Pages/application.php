@@ -33,9 +33,9 @@ require('../database/db.php');
                     <ul class="dropdown-menu dropdown-menu-end">
 
                         <li><a class="dropdown-item" href="../Pages/profile.php">Profile Settings</a></li>
-                        <li><a class="dropdown-item"  href="../Pages/logout.php">Log Out</a></li>
+                        <li><a class="dropdown-item" href="../Pages/logout.php">Log Out</a></li>
                         <li class="dropdown-item">
-                        <button type="button" class="btn ms-1" onclick="location.href = '../Pages/app1.php'">Box View</button>
+                            <button type="button" class="btn ms-1" onclick="location.href = '../Pages/app1.php'">Box View</button>
                         </li>
                     </ul>
                 </li>
@@ -146,6 +146,7 @@ require('../database/db.php');
                             <table id="example" class="table table-striped data-table" style="width: 100%">
                                 <thead>
                                     <tr>
+                                        <th>secret</th>
                                         <th>APP NAME</th>
                                         <th>VERSION</th>
                                         <th>Total User</th>
@@ -168,6 +169,7 @@ require('../database/db.php');
                                     ?>
 
                                         <tr class="active-row" align="left">
+                                            <td><?php echo $data['secret']; ?></td>
                                             <td><?php echo $data['app']; ?></td>
                                             <td><?php echo $data['veri']; ?></td>
                                             <td><?php $man = $data['app'];

@@ -210,6 +210,7 @@
                   <table id="example" class="table table-striped data-table" style="width: 100%; text-align:center;">
                     <thead>
                       <tr>
+                        <th>secret</th>
                         <th>APP NAME</th>
                         <th>VERSION</th>
                         <th>Total User</th>
@@ -231,7 +232,8 @@
                       while ($data = mysqli_fetch_array($records)) {
                       ?>
 
-                        <tr class="active-row" align="left">
+                        <tr class="active-row" align="center">
+                        <td ><?php echo $data['secret']; ?></td>
                           <td style="text-align:center ;"><?php echo $data['app']; ?></td>
                           <td style="text-align:center ;"><?php echo $data['veri']; ?></td>
                           <td style="text-align:center ;"><?php $man = $data['app'];
