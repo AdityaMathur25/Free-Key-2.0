@@ -100,7 +100,7 @@ $public =   $_GET['profile'];
                         </div>
                     </li>
                     <li>
-                        <a href="#" class="nav-link px-3">
+                        <a href="../Pages/downloads.php" class="nav-link px-3">
                             <span class="me-2"><i class="bi bi-box-arrow-down"></i></span>
                             <span>Downloads</span>
                         </a>

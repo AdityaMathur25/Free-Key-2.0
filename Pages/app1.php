@@ -3,13 +3,12 @@ include("../database/auth_session.php");
 require('../database/db.php');
 ?>
 <?php
-$connect = mysqli_connect("localhost", "root", "", "adityama_demo1");
 //$tab_query = "SELECT * FROM dataa ";
 $tab_menu = '';
 $tab_content = '';
 $i = 0;
 $product_query = "SELECT * FROM `dataa` where user = '" . $_SESSION['username'] . "' ";
-$product_result = mysqli_query($connect, $product_query);
+$product_result = mysqli_query($con, $product_query);
 while ($sub_row = mysqli_fetch_array($product_result)) {
     
                     $sql = "SELECT * FROM `dataa` where `app`=  '".$sub_row["app"]."' ";
@@ -130,7 +129,7 @@ $i++;
                         </div>
                     </li>
                     <li>
-                        <a href="#" class="nav-link px-3">
+                        <a href="../Pages/downloads.php" class="nav-link px-3">
                             <span class="me-2"><i class="bi bi-box-arrow-down"></i></span>
                             <span>Downloads</span>
                         </a>

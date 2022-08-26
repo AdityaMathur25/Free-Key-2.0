@@ -35,12 +35,7 @@ include("../database/auth_session.php");
                         <i class="bi bi-person-fill"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end">
-
-                        <li><a class="dropdown-item" href="../Pages/profile.php">Profile Settings</a></li>
-                        <li>
-                            <a class="dropdown-item" href="#">Contact Support</a>
-                        </li>
-                        <li><a class="dropdown-item" style="border:3px red solid;" href="../Pages/logout.php">Log Out</a></li>
+                        <li><a class="dropdown-item" href="../Pages/logout.php">Log Out</a></li>
                         <li class="dropdown-item">
                             <label for="border2">
                                 <input checked="false" type="checkbox" id="border2" />
@@ -95,7 +90,7 @@ include("../database/auth_session.php");
                         </div>
                     </li>
                     <li>
-                        <a href="#" class="nav-link px-3">
+                        <a href="../Pages/downloads.php" class="nav-link px-3">
                             <span class="me-2"><i class="bi bi-box-arrow-down"></i></span>
                             <span>Downloads</span>
                         </a>
