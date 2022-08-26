@@ -86,7 +86,7 @@ $name = "OASIS";
                     
                 </div>
 
-                <button type="button" class="text-center btn  btn-outline-secondary stretch " style="padding-left : 50px; padding-right:50px; margin-top: 25px;" onclick="myFunction()">Copy Key</button>
+                <button type="button" class="text-center btn  btn-outline-primary stretch " style="padding-left : 50px; padding-right:50px; margin-top: 25px;" onclick="myFunction()">Copy Key</button>
 
             </div>
         </div>
@@ -99,7 +99,7 @@ $name = "OASIS";
 
 
 
-    <footer id="footer" class="enclose problem">
+    <footer id="footer" style="padding-top:20% ;">
         <div class="container">
             <div class="row text-center" style="color: white;">
                 <p>
@@ -114,16 +114,8 @@ $name = "OASIS";
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- SMOOTH SCROLL -->
-    <script src="js/smooth-scroll.min.js"></script>
-    <!-- PARALLAX IMG -->
-    <script src="js/jquery.parallax-1.1.3.js"></script>
-    <!-- SCROLL REVEAL -->
-    <script src="js/scrollReveal.min.js"></script>
-    <!-- FUNCTIONS -->
-    <script src="js/functions.js"></script>
-    <script>
+                    <?php include '../assets/scripts.php' ?>
+        <script>
         function copyToClipboard(text) {
             var sampleTextarea = document.createElement("textarea");
             document.body.appendChild(sampleTextarea);

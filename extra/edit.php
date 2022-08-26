@@ -35,10 +35,16 @@ if (isset($_POST['update'])) // when click on Update button
   if ($edit) {
 
     mysqli_close($con); // Close connection
-    header("location:mapp.php"); // redirects to all records page
+    ?><script type="text/javascript">
+    window.location.href = '../extra/success.php?message=Application+Updated+successfully+&type=success&tom=Woah+!!!&link=../Pages/application.php';
+    </script>
+    <?php // redirects to all records page
     exit;
   } else {
-    echo (mysqli_error($con));
+    ?><script type="text/javascript">
+    window.location.href = '../extra/success.php?message=Error+Updating+Application+&type=danger&tom=Sorry+!!!&link=../Pages/application.php';
+    </script>
+    <?php
   }
 }
 ?>
