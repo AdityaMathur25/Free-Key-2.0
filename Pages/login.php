@@ -44,7 +44,7 @@
                             $_SESSION['id'] = $num['id'];
                             mysqli_query($con, "UPDATE users set old_ip='$uip',new_ip='$mad' where username = '$username' ");
                         }  // Redirect to user dashboard page
-                        header("Location: dashboard.php");
+                        header("Location: Dashboard.php");
                     } else {
                         echo "<div class='text-large'>
                             <h3>Incorrect Username/password.</h3><br/>
