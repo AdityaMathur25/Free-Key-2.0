@@ -10,3 +10,4 @@ $con = mysqli_connect($servername,$username,$pass,$dbname);
         echo "Failed to connect to MySQL: " . mysqli_connect_error();
     }
 ?>
+<!-- A-<dxP0ZIQXzt9]l -->
